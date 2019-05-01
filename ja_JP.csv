@@ -2431,7 +2431,7 @@ Notified,通知済
 "No ordered items",注文された商品はありません
 "Total %1 product(s)","合計 %1 商品"
 Subtotal:,小計:
-"Tier Pricing",価格層
+"Tier Pricing",段階的価格
 "Custom Price",カスタム価格
 "Please select",選んで下さい
 "Move to Shopping Cart",ショッピングカートへ移動
@@ -3548,7 +3548,7 @@ Pricing,価格決定
 "The companies have been reassigned.",会社が再割り当てされました。
 "Error while reassigning the company.",会社の再割り当て中にエラーが発生しました。
 "Discount value cannot be outside the range 0-100",ディスカウント値は0〜100の範囲でなければなりません
-"We found a duplicate website, tier price or quantity.","複製ウェブサイト、tierプライス もしくは 量が見つかりました。"
+"We found a duplicate website, tier price or quantity.",重複したウェブサイト、段階的価格または数量が見つかりました。
 "The selected items are being processed. You can continue to work in the meantime.","選択した項目が処理されています。 その間も作業を続けることができます。"
 "The selected changes have been applied to the shared catalog.",選択した変更が共有カタログに適用されました。
 "New Shared Catalog",新しい共有カタログ
@@ -3591,7 +3591,7 @@ Exception,例外
 "Assign Companies",会社を割り当てる
 "General Settings",全般設定
 "Delete ""${ $.$data.name }""","""${ $.$data.name }"" を削除"
-"Catalog and Tier Price",カタログとTier価格
+"Catalog and Tier Price",カタログと段階的価格
 "Group or Catalog",グループもしくはカタログ
 "You must enable the <a href=""%1"" data-role=""notification-dialog"">shared catalog</a> feature in 
         Stores -> Configuration -> B2B Features to use the shared catalogs in the storefront.
@@ -4257,7 +4257,7 @@ Center,中央
 "Media Gallery converter should be an instance of EntryConverterInterface.",メディアギャラリーコンバーターはEntryConverterInterfaceのインスタンスでなければなりません。
 "There is no MediaGalleryEntryConverter for given type",与えられたタイプにMediaGalleryEntryConverterはありません
 "SKU length should be %1 characters maximum.","SKUの値の長さは最大 %1 キャラクターでなければなりません。"
-"We found a duplicate website, tier price, customer group and quantity.",複製ウェブサイト、Tierプライス;カスタムグループと量が見つかりました。
+"We found a duplicate website, tier price, customer group and quantity.",重複したウェブサイト、段階的価格、顧客グループと数量が見つかりました。
 "Invalid option id %1","不正なオプション id %1"
 "Can not create attribute set based on non product attribute set.",商品属性セットでないものに基づく属性セットは作成できません。
 "Can not create attribute set based on not existing attribute set",存在しない商品属性セットに基づく属性セットは作成できません。
@@ -4302,7 +4302,11 @@ Center,中央
 "The file is empty. Please choose another one","ファイルは空です。 別のものをお選びください"
 "Some of the selected item options are not currently available.",選択いただいたオプションのうちいくつかは現在ご利用いただけません。
 "The text is too long.",テキストが長すぎます。
-"This product doesn't have tier price",この商品はtier価格がありません
+"Could not save Tier Prices",段階的価格を保存できませんでした
+"Could not replace Tier Prices",段階的価格を置換できませんでした
+"Could not delete Tier Prices",段階的価格を削除できませんでした
+"We found a duplicate website, tier price, customer group and quantity: Customer Group = %customerGroup, Website ID = %websiteId, Quantity = %qty. Row ID: SKU = %SKU, Website ID: %websiteId, Customer Group: %customerGroup, Quantity: %qty.","重複したウェブサイト、段階的価格、顧客グループ、数量が見つかりました: 顧客グループ = %customerGroup, ウェブサイトID= %websiteId, 数量 = %qty. 行ID: SKU = %SKU, ウェブサイトID: %websiteId, 顧客グループ: %customerGroup, 数量: %qty"
+"This product doesn't have tier price",この商品は段階的価格がありません
 "Product hasn't group price with such data: customerGroupId = '%1', website = %2, qty = %3","商品は他のデータ: customerGroupId = '%1', website = %2, qty = %3　とグループ化しませんでした。"
 "Invalid data provided for tier_price",tier_priceのデータが無効です
 "Could not save group price",グループ価格を保存できません
@@ -4415,7 +4419,7 @@ Groups,グループ
 "Sort Custom Option",並べ替えカスタムオプション
 "Item Price",アイテム価格
 "and above",またはそれ以上
-"Delete Tier",階層の削除
+"Delete Tier",削除
 "Product In Websites",ウェブサイト内の商品
 "(Copy data from: %1)","(データのコピー元: %1)"
 "start typing to search attribute",属性を検索してください
@@ -4427,7 +4431,7 @@ Groups,グループ
 "Special Price",特別価格
 "Regular Price",通常価格
 "Buy %1 for: ","%1を購入: "
-"Buy %1 for %2 each and <strong class=""benefit"">save<span class=""percent tier-%3"">&nbsp;%4</span>%</strong>","%2の%1をそれぞれ購入し <span class=""percent tier-%3"">&nbsp;%4</span>%<strong class=""benefit"">セーブ</strong>しましょう。"
+"Buy %1 for %2 each and <strong class=""benefit"">save<span class=""percent tier-%3"">&nbsp;%4</span>%</strong>","%1を%2点お買い上げいただくごとに <span class=""percent tier-%3"">&nbsp;%4</span>%<strong class=""benefit"">お値引き</strong>いたします。"
 "Buy %1 for %2 each",%2の%1をそれぞれ購入する
 "Compare Products",商品の比較
 "Print This Page",ページを印刷する
@@ -4618,11 +4622,12 @@ Watermark,透かし
 none,なし
 "File validation failed.",ファイルの認証に失敗しました。
 text,テキスト
-"Tier Price",ボリュームディスカウント
+"Tier Price",段階的価格
 "If your Magento site has multiple views, you can set the scope to apply to a specific view.",あなたのMagentoに複数のビューがある場合は、適用対象のビューを指定できます。
 "Page not found",ページが見つかりません
 "The attribute couldn't be saved due to an error. Verify your information and try again. If the error persists, please try again later.","エラーのため属性を保存できませんでした。 情報を確認して、再度お試し下さい。 エラーが解決しない場合は、後で再度お試しください。"
 "The attribute couldn't be validated due to an error. Verify your information and try again. If the error persists, please try again later.","エラーのため属性を検証できませんでした。 情報を確認して、再度お試し下さい。 エラーが解決しない場合は、後でもう一度お試しください。"
+"Tier prices data should be array, but actually other type is received",段階的価格データは配列でなければなりませんが、他のデータ型が与えられました。
 "Maximum %1 characters","最大: %1 文字"
 remaining,残存数
 "too many",多すぎる
@@ -4655,7 +4660,7 @@ remaining,残存数
 "The required option wasn't entered. Enter the option and try again.",必須オプションが入力されていません。オプションを入力して再度お試し下さい。
 "The file is empty. Select another file and try again.",ファイルが空です。他のファイルを選択して再度お試し下さい。
 "The text is too long. Shorten the text and try again.",テキストが長すぎます。テキストを短くして再度お試し下さい。
-"Tier price is unavailable for this product.",この商品にtier価格は利用できません。
+"Tier price is unavailable for this product.",この商品に段階的価格は利用できません。
 "The tier_price data is invalid. Verify the data and try again.",tier_priceのデータが無効です。データを確認して再度お試し下さい。
 "The group price couldn't be saved.",グループ価格を保存できませんでした。
 "The data was invalid. Verify the data and try again.",データが無効です。データを確認して再度お試し下さい。
@@ -5518,6 +5523,7 @@ YTD,1年間
 "Sign Out",サインアウト
 "About the calendar",カレンダーについて
 "Go Today",今日へ
+WK,週
 Time,時間
 Hour,時
 Minute,分
@@ -5702,6 +5708,7 @@ Pagination,ページング
 "Report Bugs",バグを報告してください。
 "Themes JavaScript and CSS files combined to one file.",テーマのJavaScriptとCSSファイルを1つのファイルに集約したものです。
 "User-Agent Exceptions",ユーザーエージェントエクセプション
+"Search strings are either normal strings or regular exceptions (PCRE). They are matched in the same order as entered. Examples:<br /><span style=""font-family:monospace"">Firefox<br />/^mozilla/i</span>","検索文字列は通常の文字列かPCRE互換正規表現を使用してください。これらは入力された順に評価されます。例:<br/><span style=""font-family:monospace"">Firefox<br />/^mozilla/i</span>"
 "Find a string in client user-agent header and switch to specific design theme for that browser.",文字列をクライアントのユーザーエージェントヘッダーで見つけてブラウザのデザインテーマに切り替えてください。
 "If the current frame position does not cover utmost pages, will render link to current position plus/minus this value.",現在のページングナビ表示範囲が大半のページをカバーしていない場合、この値を加算・減算したページ番号を表示します。
 "Alternative text for previous link in pagination menu. If empty, default arrow image will used.",前ページへのリンクへのテキストに使用します。デフォルトでは矢印型の画像が使用されます。
@@ -5712,10 +5719,12 @@ Pagination,ページング
 "Add New User Agent Rule",新規のユーザーエージェントルールを作成
 "Add Block Class Type to Hints",ヒントにブロッククラスの型を追加
 "When the adapter was changed, please flush Catalog Images Cache.",アダプタが変更されたら、画像キャッシュをフラッシュしてください。
+"For Windows server only.",Windowsサーバーのみ。
 "Maximum Width",最大幅
 "Maximum allowed width for uploaded image.",アップロードされた画像に許可する最大幅
 "Maximum Height",最大高さ
 "Maximum allowed height for uploaded image.",アップロードされた画像に許可する最大高さ
+"<strong style=""color:red"">Warning!</strong> When using Store Code in URLs, in some cases system may not work properly if URLs without Store Codes are specified in the third-party services (e.g. PayPal etc.).","<strong style=""color:red"">警告!</strong> ストアコードをURLに使用している際は、外部サービスからのストアコードが付加されない形でのアクセスの場合に正しい動作をしない可能性があります。 (例 PayPal など。)"
 "May start with {{unsecure_base_url}} placeholder.","{{unsecure_base_url}} プレイスホルダーで始まっているか"
 "May start with {{secure_base_url}} or {{unsecure_base_url}} placeholder.","{{secure_base_url}} か{{unsecure_base_url}} プレイスホルダーで始まっているか"
 "Enter https protocol to use Secure URLs on Storefront.",ストアフロントでセキュアURLを使用するためHTTPSプロトコルを入力する
@@ -8424,6 +8433,13 @@ Reimburse,払い戻す
 "The ""%1"" value is invalid for stock item ID. Enter either zero or a number than zero to try again.","""%1""の値は在庫アイテムIDには無効です。 0または0より大きい数字を入力して、再度お試し下さい。"
 "The ""%1"" value is invalid for stock item ID. Use the stock item ID's assigned ""%2"" value and try again.","""%1""の値は在庫アイテムIDには無効です。 在庫アイテムIDに割り当てられた""%2""の値を使用して、再度お試し下さい。"
 "Quantity increments can't use decimals. Enter a new increment and try again.","数量単位で小数点以下は使用できません。 新しいインクリメントを入力し、再度お試し下さい。"
+"Public Client Key","パブリック クライアント キー"
+"Signature Key",シグネチャーキー
+"Merchant MD5 (deprecated)",マーチャントMD5(非推奨)
+"Advanced Authorize.Net Settings","高度な Authorize.Net 設定"
+"Enable Credit Card Verification Field",セキュリティコードフィールドを有効にする
+"Invalid request to gateway.",ゲートウェイへの不正な要求です。
+"Invalid gateway credentials.",ゲートウェイへの不正な認証情報です。
 "Gift Messages are not applicable for empty cart",空のカートにギフトメッセージは適用されません
 "Gift Messages are not applicable for virtual products",ギフトメッセージは仮想製品には適用されません
 "Gift Message is not available",ギフトメッセージは使えません
