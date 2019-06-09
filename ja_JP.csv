@@ -3970,6 +3970,8 @@ Female,女性
 "Localized Exception",ローカライズ例外
 "NOT LOGGED IN",ログインしていません
 "Please enter the state/province.",都道府県を入力してください。
+"region is a required field.",地域は必須項目です。
+"regionId is a required field.",地域IDは必須項目です。
 Label,ラベル
 Visitor,訪問者
 "Personal Information",個人情報
@@ -4025,6 +4027,7 @@ Newsletters,ニュースレター
 "Set a New Password",新規パスワードセット
 "You have signed out and will go to our homepage in 5 seconds.",サインアウトしました。5秒後にTOPページに移動します。
 "Creating an account has many benefits: check out faster, keep more than one address, track orders and more.","会員登録いただくと、次のメリットがあります: 簡単にご購入いただけます、ご住所の登録ができます、ご注文内容をあとから確認いただけます。"
+Fax,FAX
 "Tax/VAT number",納税者番号
 "Welcome to %store_name","%store_name へようこそ"
 "Welcome to %store_name.","ようこそ %store_name へ"
@@ -4193,12 +4196,14 @@ Addresses,住所
 "The password for your account has been successfully changed.",あなたのアカウントのパスワードが正常に変更されました。
 "If you did not request this change, please contact us.",この変更を要求していない場合はお問い合わせください。
 "Checkout out as a new customer",会員登録して購入する
+"Create Account",アカウントを作成
 "Checkout out using your account",ご登録済みのアカウントでご購入
 "Leave empty for default (2). Valid range: 1-4","空白の場合は初期値(2)になります。 有効範囲: 1-4"
 "Semicolon (;) separated values.<br/>Put semicolon in the beginning for empty first option.<br/>Leave empty for open text field.","セミコロン(;) で区切って下さい。<br/>セミコロンを先頭にすると空白の選択肢になります。<br/>この項目を使わない場合は空のままにしてください。"
 "Last Logged In",最終ログイン
 "You are signed out.",サインアウトしました。
 "Could not authenticate. Please try again later",認証できませんでした。再度お試し下さい。
+"Account will be unlocked after provided time.",アカウントロックは一定時間後に解除されます。
 "The password doesn't match this account. Verify the password and try again.",パスワードがこのアカウントと一致しません。パスワードを確認して再度お試し下さい。
 "The email address is incorrect. Verify the email address and try again.",メールアドレスが正しくありません。メールアドレスを確認して再度お試し下さい。
 "The customer ID isn't defined.",顧客IDが定義されていません。
@@ -4233,6 +4238,7 @@ Street,番地
 "Are you sure you want to delete the address?",この住所を削除してもよろしいですか？
 "Additional addresses",追加住所
 State,都道府県
+"Reset password",パスワードのリセット
 "Update Address",住所を更新
 "Are you sure to delete selected address?",選択した住所を削除してもよろしいですか？
 "Are you sure you want to delete the selected customers?",選択した顧客を削除してもよろしいですか？
@@ -10616,6 +10622,8 @@ Attention,注意
 "Log JS Errors to Session Storage Key",JSエラーをセッションストレージキーに記録する
 "Initialization error component, check the spelling of the name or the correctness of the call.","初期化エラーコンポーネント, 名称のスペルや呼び出しの適切さを確認します。"
 "Please enter 6 or more characters. Leading or trailing spaces will be ignored.",6文字以上を入力してください。先頭と最後の空白は無視されます。
+"Please enter a quantity greater than 0.","0 より大きい数を入力してください。"
+"Please enter a valid percentage discount value greater than 0.","0% より大きい割引率を入力してください。"
 "Please enter a value less than or equal to %s.",%s以下か同じ数の値を入力してください。
 "Please enter a value greater than or equal to %s.",%s以上か同じ数の値を入力してください。
 "Insert Images...",画像を挿入...
@@ -11352,3 +11360,4 @@ Translate,翻訳
 "Please enter a date from the past.",過去の日付を入力してください。
 "Maximum length of this field must be equal or less than %1 symbols.",このフィールドの最大は%1と同じかそれ以下です。
 "Admin is a required field in the each row.",Adminは各行に必須のフィールドです。
+"Please enter a quantity greater than 0.","0 より大きい個数を入力してください。"
