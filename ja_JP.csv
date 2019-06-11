@@ -17,6 +17,7 @@ None,なし
 "You need more permissions to save this setting.",この設定を保存するにはさらに多くの権限が必要です。
 "Role Scopes",権限範囲
 Custom,カスタム
+"You don't have permissions to save this item in scope of current store view. Please, switch to allowed store view","現在のストアビューの範囲でこのアイテムを保存する権限がありません。 許可されたストアビューに切り替えてください。"
 "More permissions are needed to delete the ""%1"" item.","""%1"" を削除するための権限が不足しています。"
 "This entity needs to be assigned to a store view. Verify the entity assignment and try again.",このエンティティはストアビューに割り当てられる必要があります。割当を確認してやり直してください。
 "Orders can only be completed in an active store. Verify the store and try again.",注文はアクティブなストアでのみ完了できます。ストアを確認してやり直してください。
@@ -1253,10 +1254,13 @@ Phone,電話
 "Expiration year is invalid.",有効期限年が正しくありません。
 "Credit card number is required.",カード番号は必須です。
 "Credit card number is invalid.",カード番号が正しくありません。
+"Credit card number must be 12-19 digits.",クレジットカード番号は12から19桁の数字でなければなりません。
+"Cardholder name is too long.",カード名義人名が長すぎます。
 "CVV verification failed.",CVV認証に失敗しました。
 "Postal code verification failed.",郵便番号の認証に失敗しました。
 "Credit card number is prohibited.",クレジットカード番号は禁止されています。
 "Addresses must have at least one field filled in.",住所には少なくとも1つの入力されたフィールドが必要です。
+"Company is too long.",会社名が長すぎます。
 "US state codes must be two characters to meet PayPal Seller Protection requirements.",PayPalの売り手保護の要件を満たすには、米国の州コードは2文字でなければなりません。
 "Incomplete PayPal account information.",未完のPayPalのアカウント情報
 "Invalid PayPal account information.",無効なPayPalアカウント情報
