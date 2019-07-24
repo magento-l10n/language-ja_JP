@@ -4034,6 +4034,7 @@ Newsletters,ニュースレター
 Fax,FAX
 "Tax/VAT number",納税者番号
 "Welcome to %store_name","%store_name へようこそ"
+"%name,","%名前,"
 "Welcome to %store_name.","ようこそ %store_name へ"
 "To sign in to our site, use these credentials during checkout or on the <a href=""%customer_url"">My Account</a> page:","サイトにサインインするには、これらの身分証明をチェックアウト時か <a href=""%customer_url"">マイアカウント</a> ページにて使用してください:"
 Email:,メール:
@@ -4208,6 +4209,7 @@ Addresses,住所
 "You are signed out.",サインアウトしました。
 "Could not authenticate. Please try again later",認証できませんでした。再度お試し下さい。
 "Account will be unlocked after provided time.",アカウントロックは一定時間後に解除されます。
+"Text One Line",一行テキスト
 "The password doesn't match this account. Verify the password and try again.",パスワードがこのアカウントと一致しません。パスワードを確認して再度お試し下さい。
 "The email address is incorrect. Verify the email address and try again.",メールアドレスが正しくありません。メールアドレスを確認して再度お試し下さい。
 "The customer ID isn't defined.",顧客IDが定義されていません。
@@ -4215,6 +4217,8 @@ Addresses,住所
 "Confirmation isn't needed.",確認は必要ありません。
 "This account isn't confirmed. Verify and try again.",このアカウントは確認できません。確認して再度お試し下さい。
 "A customer with the same email address already exists in an associated website.",顧客と同じE-メールアドレスがすでに関連するウェブサイトに存在します。
+"The password token is mismatched. Reset and try again.",パスワードトークンが一致しません。リセットして再度お試し下さい。
+"The password token is expired. Reset and try again.",パスワードトークンが期限切れです。リセットして再度お試し下さい。
 "The transactional account email type is incorrect. Verify and try again.",トランザクションアカウントのメールタイプが正しくありません。確認して再度お試し下さい。
 "The customer email is missing. Enter and try again.",顧客のメールが見つかりません。入力して再度お試し下さい。
 "A customer website ID wasn't specified. The ID must be specified to use the website scope.",顧客ウェブサイトIDが指定されていません。ウェブサイトスコープを使用するにはIDを指定しなければなりません。
@@ -4227,6 +4231,7 @@ Addresses,住所
 "Default shipping address has been changed.",標準の配送先が変更されました。
 "We can't change default shipping address right now.",現在、標準の配送先を変更することができません。
 "There is no such address entity to delete.",削除する住所のエンティティがありません。
+"We can't mass delete the addresses right now.",ただいま住所を一括削除できません。
 "Customer address has been updated.",顧客住所を更新しました。
 "New customer address has been added.",新しい顧客住所を追加しました。
 "There is no customer with such id.","そのような id の顧客はいません。"
@@ -4243,7 +4248,10 @@ Street,番地
 "Additional addresses",追加住所
 State,都道府県
 "Reset password",パスワードのリセット
+"Invalidate tokens",無効なトークン
 "Update Address",住所を更新
+"Name Prefix",敬称（前）
+"Name Suffix",敬称（後）
 "Are you sure to delete selected address?",選択した住所を削除してもよろしいですか？
 "Are you sure you want to delete the selected customers?",選択した顧客を削除してもよろしいですか？
 "Are you sure you want to unsubscribe the selected customers from the newsletter?",選択した顧客のニュースレターの購読を解除してもよろしいですか？
