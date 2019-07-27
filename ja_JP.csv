@@ -1261,6 +1261,8 @@ Phone,電話
 "Credit card number is prohibited.",クレジットカード番号は禁止されています。
 "Addresses must have at least one field filled in.",住所には少なくとも1つの入力されたフィールドが必要です。
 "Company is too long.",会社名が長すぎます。
+"Postal code is required.",郵便番号が必要です。
+"Street address is required.",番地が必要です。
 "US state codes must be two characters to meet PayPal Seller Protection requirements.",PayPalの売り手保護の要件を満たすには、米国の州コードは2文字でなければなりません。
 "Incomplete PayPal account information.",未完のPayPalのアカウント情報
 "Invalid PayPal account information.",無効なPayPalアカウント情報
@@ -1347,6 +1349,8 @@ State/Province,都道府県
 "Add Credit Card",クレジットカード追加
 "Card Number",カード番号
 "Is Default",標準
+Yes,はい
+No,いいえ
 "An error occured with payment processing.",支払い処理中にエラーが発生しました。
 "Can not initialize PayPal (Braintree)","PayPal (Braintree)を初期化できません"
 "Capture action",キャプチャ操作
