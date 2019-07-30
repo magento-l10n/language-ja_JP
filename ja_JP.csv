@@ -9271,6 +9271,7 @@ Choose...;選択してください..."
 "The order amount of %1 is pending approval on the payment gateway.",注文額%1は決済ゲートウェイ上で承認保留中です
 "Registered notification about captured amount of %1.",登録済みお知らせでキャプチャーの数量%1
 "Order is suspended as its capture amount %1 is suspected to be fraudulent.",キャプチャー量%1は詐欺行為と疑われたため注文は一時停止になります
+"Sample message.",サンプルメッセージ。
 "Use Aggregated Data (beta)","合計データを使用する (ベータ版)"
 "Could not save the comment.",コメントを保存できませんでした。
 "Authorized amount of %1.",許可された量の%1。
@@ -9278,6 +9279,7 @@ Choose...;選択してください..."
 "Captured amount of %1 online.",%1をオンラインで売上確定しました。
 "Product is not salable.",製品は販売されていません。
 "Get available payment methods",利用可能な支払方法
+"Include Discount Amount",値引額を含む
 "The comment is missing. Enter and try again.",コメントが見つかりません。入力して再度お試し下さい。
 "The ""%1"" coupon code isn't valid. Verify the code and try again.","""%1"" クーポンコードが無効です。コードを確認して、再度お試し下さい。"
 "The invoice can't be created without products. Add products and try again.",商品なしに請求書は作成できません。商品を追加して再度お試し下さい。
