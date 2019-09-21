@@ -1662,6 +1662,7 @@ Cross-sells,クロスセル
 Categories,カテゴリ
 "Category is not available for requested store.",要求されたストアにてカテゴリは有効ではありません。
 "There was a category move error.",カテゴリ移動エラーが発生しました。
+"You moved the category.",カテゴリを移動しました。
 "Attribute ""%1"" is required.","属性 ""%1"" は必須です。"
 "You saved the category.",カテゴリを保存しました。
 "Something went wrong while saving the category.",カテゴリの保存中に問題が発生しました。
@@ -1714,6 +1715,8 @@ Categories,カテゴリ
 "You removed product %1 from the comparison list.","比較リストより商品 %1 を削除しました。"
 "1 item","1 商品"
 "%1 items","%1 商品"
+"Are you sure you want to remove this item from your Compare Products list?",比較リストからこの商品を削除してもよろしいですか？
+"Are you sure you want to remove all items from your Compare Products list?",比較リストから全ての商品を削除してもよろしいですか？
 "Invalid attribute %1","無効な属性 %1"
 Grid,表
 List,リスト
@@ -1788,6 +1791,7 @@ Category,カテゴリ
 "SKU length should be %1 characters maximum.","SKUの値の長さは最大 %1 キャラクターでなければなりません。"
 "Please enter a valid number in this field.",正しい数字で入力してください。
 "We found a duplicate website, tier price, customer group and quantity.",重複したウェブサイト、段階的価格、顧客グループと数量が見つかりました。
+"Percentage value must be a number between 0 and 100.",値は0から100の間の数値である必要があります。
 "Invalid option id %1","不正なオプション id %1"
 "Can not create attribute set based on non product attribute set.",商品属性セットでないものに基づく属性セットは作成できません。
 "Can not create attribute set based on not existing attribute set",存在しない商品属性セットに基づく属性セットは作成できません。
@@ -1836,8 +1840,13 @@ px.,ピクセル
 "Some of the selected item options are not currently available.",選択いただいたオプションのうちいくつかは現在ご利用いただけません。
 "The text is too long.",テキストが長すぎます。
 "Invalid attribute %fieldName = %fieldValue.","不正な属性 %fieldName = %fieldValue."
+"Requested store is not found. Row ID: SKU = %SKU, Store ID: %storeId.","要求されたストアが見つかりませんでした。行ID: SKU = %SKU, ストアID: %storeId"
+"Invalid attribute Cost = %cost. Row ID: SKU = %SKU, Store ID: %storeId.","不正な原価 = %cost. 行ID: SKU = %SKU, ストアID: %storeId."
 "Could not save Prices.",価格を保存できません。
 "Could not delete Prices",価格を削除できません
+"Requested product doesn't exist. Row ID: SKU = %SKU, Store ID: %storeId, Price From: %priceFrom, Price To: %priceTo.","要求された商品が存在しません。 行ID: SKU = %SKU, ストアID: %storeId, 開始価格: %priceFrom, 終了価格: %priceTo。"
+"Requested store is not found. Row ID: SKU = %SKU, Store ID: %storeId, Price From: %priceFrom, Price To: %priceTo.","要求されたストアが存在しません。 行ID: SKU = %SKU, ストアID: %storeId, 開始価格: %priceFrom, 終了価格: %priceTo。"
+"Invalid attribute %label = %priceTo. Row ID: SKU = %SKU, Store ID: %storeId, Price From: %priceFrom, Price To: %priceTo.","不正な属性 %label = %priceTo です。 行ID: SKU = %SKU, ストアID: %storeId, 開始価格: %priceFrom, 終了価格: %priceTo。"
 "Could not save Tier Prices",段階的価格を保存できませんでした
 "Could not replace Tier Prices",段階的価格を置換できませんでした
 "Could not delete Tier Prices",段階的価格を削除できませんでした
@@ -2650,8 +2659,18 @@ Path,パス
 "Use Categories Path for Product URLs",商品URLにカテゴリパスを使用する
 "Create Permanent Redirect for URLs if URL Key Changed",URLが変更されたら恒久的なリダイレクト設定を作成する
 "Please choose a condition to add.",追加する条件を選択してください
+"Catalog Products List",商品リスト
 "List of Products",商品一覧
 "Products Grid Template",商品グリッドテンプレート
+"
+                    Time in seconds between the widget updates.
+                    <br/>If not set, equals to 86400 seconds (24 hours). To update widget instantly, go to Cache Management and clear Blocks HTML Output cache.
+                    <br/>Widget will not show products that begin to match the specified conditions until cache is refreshed.
+                ","
+ウィジェットの更新間隔 (秒)。
+                    <br/>設定されていない場合は 86400 秒 (24 時間) です。ウィジェットを即座に更新するには、キャッシュ管理や HTML 出力をブロック キャッシュのクリアを行ってください。
+                    <br/>ウィジェットはキャッシュが更新されるまでの間、指定された条件に一致する商品のリストを更新しません。
+                "
 "Invalid method: %1","無効なメソッド: %1"
 "My Cart (1 item)","マイカート (1 アイテム)"
 "My Cart (%1 items)","マイカート (%1 アイテム)"
@@ -2675,6 +2694,7 @@ Checkout,レジに進む
 "Something went wrong while processing your order. Please try again later.",注文をプロセス中に問題が発生しました。後で再度お試し下さい
 "%1 doesn't extend \Magento\Checkout\CustomerData\ItemInterface","%1 は \Magento\Checkout\CustomerData\ItemInterface を拡張しません。"
 "Payment Method",お支払方法
+"Payment Page",支払いページ
 "We can't find the product.",商品が見つかりません。
 "We found an invalid request for adding product to quote.",クオートに商品を追加する不正なリクエストを発見しました
 "The product does not exist.",商品が見つかりません。
@@ -2752,6 +2772,7 @@ Login,ログイン
 "Ship To:",配送先:
 edit,編集
 "Order Summary",ご注文内容
+"View and Edit Cart",カートを編集
 "Field ","フィールド "
 " is required."," は必須です。"
 "Provided Zip/Postal Code seems to be invalid.",ご入力された郵便番号は正しくないようです。
@@ -2770,6 +2791,7 @@ edit,編集
 "Maximum Number of Items to Display in Order Summary",注文情報サマリーに表示する最大商品点数
 "Quote Lifetime (days)",見積もりの有効期間(日)
 "After Adding a Product Redirect to Shopping Cart",商品を追加後にショッピングカート画面にリダイレクトする
+"Number of Items to Display Pager",ページャーに表示する候補数
 "My Cart Link",マイカートリンク
 "Display Cart Summary",カートの概要を表示
 "Shopping Cart Sidebar",サイドバーショッピングカート
@@ -2815,6 +2837,7 @@ items,商品
 of,の
 "Something went wrong while saving the page. Please refresh the page and try again.",ページを保存中に問題が発生しました。ページを再読み込みして再度お試し下さい。
 "You added %1 to your <a href=""%2"">shopping cart</a>.","%1 をあなたの<a href=""%2"">ショッピングカート</a>に追加しました。"
+"Please select at least one product to add to cart",カートに追加する商品を1つ以上選択してください。
 "The quote item isn't found. Verify the item and try again.",見積もり商品が見つかりません。商品を確認して再度お試し下さい。
 "The product wasn't found. Verify the product and try again.",商品が見つかりませんでした。商品を確認して再度お試し下さい。
 "The shipping address is missing. Set the address and try again.",配送先がありません。住所を設定して再度お試し下さい。
@@ -2860,6 +2883,7 @@ Manually,手動
 "A checkout agreement with the ""%1"" specified ID wasn't found. Verify the ID and try again.","指定されたID ""%1"" の購入合意が見つかりませんでした。IDを確認して再度お試し下さい。"
 "Preview mode doesn't allow submitting the order.",プレビューモードでは注文を受け付けることはできません。
 "Preview Quote Lifetime (minutes)",カートプレビュー有効期間(分)
+"The order can't be submitted in preview mode.",プレビューモードでは、注文できません。
 "Static Blocks",静的ブロック
 "Add New Block",新規ブロック追加
 "Delete Block",ブロックの削除
@@ -2984,6 +3008,7 @@ Keywords,キーワード
 "Delete ""${ $.$data.title }""","削除 ""${ $.$data.title }"""
 "Are you sure you wan't to delete a ""${ $.$data.title }"" record?","""${ $.$data.title }"" を削除してもよろしいですか？"
 "Are you sure you wan't to delete selected items?",本当に選択したアイテムを削除しますか？
+"Are you sure you wan't to delete a %1 record?","%1 のレコードを削除してもよろしいですか?"
 "Search Engine Optimisation",検索エンジンの最適化
 "Delete Selected",選択項目を削除
 "Create Folder",フォルダーを作成する
@@ -3039,6 +3064,7 @@ Duplicated,複製
 "Create New Company",新規会社を作成
 "Something went wrong. Please try again later.",問題が発生しました。後で再度お試し下さい。
 "Invalid value of ""%value"" provided for the email field.","メールフィールドに指定された ""%value"" の値が無効です。"
+"Invalid value ""%value"" given for the website ID field.","ウェブサイトIDフィールドに与えられた ""%value"" は不正な値です。"
 "You have deleted company %companyName.","会社 %companyName を削除しました。"
 "The company no longer exists.",会社は存在しません。
 "The requested company is not found",要求された会社が見つかりません。
@@ -3123,6 +3149,7 @@ Blocked,ブロック済み
 phrase,フェーズ
 "Localized Exception.",ローカライズ例外
 "No such entity.",そのようなエンティティはありません。
+"error message",エラーメッセージ
 "Could not save role",権限を保存できませんでした
 """%fieldName"" is required. Enter and try again.""%fieldName"" is required. Enter and try again.","""%fieldName""は必須です。 入力して再度お試し下さい。""%fieldName""は必須です。 入力して再度お試し下さい。"
 "Cannot delete team",チームを削除できません
@@ -3163,6 +3190,7 @@ Contacts,連絡先
 "Create an Account",アカウント作成
 "This action will replace your Company Admin.",この操作はあなたの会社管理者を置き換えます。
 "* Your latest changes on the company profile have not been saved yet.",*会社概要の最新の変更はまだ保存されていません。
+"Dear %name,","こんにちは %name 様"
 "You have been assigned to <a href=""%customer_url"">%company_name</a> as the Company Admin.","あなたは会社管理者として<a href=""%customer_url"">%company_name</a>に割り当てられています。"
 "When you sign in to your account, you can:",アカウントにサインインすると以下のことができます:
 "* Create and manage company users and teams","* 会社のユーザーとチームの作成と管理"
@@ -3182,6 +3210,14 @@ Contacts,連絡先
 "Your account has been set to inactive and you cannot now access the company account. If you think this is a mistake, please contact your manager for details.","あなたのアカウントは非アクティブに設定されており、現在会社アカウントにアクセスすることができません。 間違いだと思われる場合は、マネージャーに詳細をお問い合わせください。"
 "A company registration request has been submitted by customer %customer. The account is temporarily locked until you approve or reject this company.","顧客 %customer によって会社登録リクエストが送信されました。 この会社を承認または拒否するまで、アカウントは一時的にロックされます。"
 "Company: %company","会社: %company"
+"Your company registration request (for the <strong>%company_name</strong>)
+    has been approved and you have been set as the Company Admin.
+    You can now create and manage your company structure.
+    Your company members are able to request quotes, create requisition lists,
+    and use other B2B features.","あなたの会社登録リクエスト（<strong>%company_name</strong>）が承認され、
+    あなたは会社管理者として設定されています。 
+    あなたは会社の組織構成を作成して管理することができます。 
+    あなたの会社の従業員は、見積の依頼や請求リストの作成、その他のB2B機能が利用できます。"
 "The status of your company <strong>%company_name</strong>
     is now <strong>Active</strong>.
     Once you login, you will be able to place orders on behalf of your company
@@ -3194,7 +3230,13 @@ Contacts,連絡先
 "When you sign in to your account, you will be able to:",アカウントにサインインすると以下のことができます:
 "* View and manage company quotes in Admin Panel","* 管理画面における会社の見積もりの表示と管理"
 "* View and edit company profile in Admin Panel","* 管理画面における会社概要の表示と編集"
+"Your company account <strong>%company_name</strong> has been blocked.
+    Your company members can continue using the website,
+    but they will not be able to place orders.","あなたの会社アカウント<strong>%company_name</strong>はロックされました。
+    あなたの会社の従業員は引き続きウェブサイトを使用できますが、
+    注文を行うことはできなくなります。"
 "If you have any questions, please contact the seller.",ご不明な点がございましたら、販売者にお問い合わせ下さい。
+"Your company account <strong>%company_name</strong> has been suspended, pending approval from the seller.","あなたの会社アカウント<strong>%company_name</strong> は販売業者側で審査中のため、一時的にご利用いただけない状態になっています。"
 "Your company registration request (for the <strong>%company_name</strong>) has been rejected
     for the following reason:",次の理由により、あなたの会社登録リクエスト（<strong>%company_name</strong>）が拒否されました:
 "This action cannot be undone. Are you sure you want to delete this company? After the company is deleted, all the company members will be set to Inactive.",このアクションは取り消せません。この会社を削除してもよろしいですか？会社を削除した後、全社員は未アクティブに設定されます。
@@ -3367,7 +3409,6 @@ Reverted,回復済
 "Charged off the company credit",与信枠を償却
 "The Company credit on all selected companies will be converted using the rate below. This operation cannot be undone.","選択されたすべての企業に対する会社のクレジットは、以下の率で換算されます。 この操作は取り消せません。"
 "Credit allocated to %company_name","クレジットが %company_name に割り当てられました"
-"Dear %name,","こんにちは %name 様"
 "Your company has been allocated a credit of %available_credit.
     You can now use the Payment On Account method to place you orders.","あなたの会社には %available_credit のクレジットが割り当てられています。
     注文を確定するのに内金支払いを使用できます。"
@@ -3494,7 +3535,6 @@ Specified,特定の
 "You cannot run this command because the Magento application is not installed.",Magentoアプリケーションがインストールされていないため、このコマンドを実行することができません。
 "This command is unavailable right now.",このコマンドはまだ利用できません
 "The ""test/test/test"" path does not exists","""test/test/test"" のパスが存在しません"
-"error message",エラーメッセージ
 "some prefix",いくつかの接頭辞
 "element label",要素ラベル
 "element hint",要素ヒント
@@ -4172,6 +4212,7 @@ Group,グループ
 "Account Lock",アカウントロック
 "Last Activity",最近の行動
 "Customer Information",顧客情報
+"If your Magento installation has multiple websites, you can edit the scope to associate the customer with a specific site.",お使いのMagentoがマルチウェブサイトインストールの場合は、スコープを切り替えて特定のサイトの顧客情報を編集できます。
 "Disable Automatic Group Change Based on VAT ID","VAT IDによる顧客グループの自動変更を無効にする"
 "Send Welcome Email From",ウェルカムメールの送信元
 "Are you sure you want to delete this item?",本当に削除しますか？
@@ -4211,6 +4252,7 @@ Addresses,住所
 "Semicolon (;) separated values.<br/>Put semicolon in the beginning for empty first option.<br/>Leave empty for open text field.","セミコロン(;) で区切って下さい。<br/>セミコロンを先頭にすると空白の選択肢になります。<br/>この項目を使わない場合は空のままにしてください。"
 "Last Logged In",最終ログイン
 "You are signed out.",サインアウトしました。
+"Invalid value of ""%value"" provided for the %fieldName field. Possible values are %template1 or %template2.","%fieldNameフィールドに指定された ""%value"" の値が無効です。可能な値: %template1 または %template2 です。"
 "Could not authenticate. Please try again later",認証できませんでした。再度お試し下さい。
 "Account will be unlocked after provided time.",アカウントロックは一定時間後に解除されます。
 "Text One Line",一行テキスト
@@ -4218,12 +4260,20 @@ Addresses,住所
 "The email address is incorrect. Verify the email address and try again.",メールアドレスが正しくありません。メールアドレスを確認して再度お試し下さい。
 "The customer ID isn't defined.",顧客IDが定義されていません。
 "The quote items are incorrect. Verify the quote items and try again.",見積もり商品が正しくありません。見積商品を確認して再度お試し下さい。
+"The ""%1"" section source isn't supported.","""%1""セクションのソースはサポートされていません。"
 "Confirmation isn't needed.",確認は必要ありません。
+"The account is already active.",アカウントはすでにアクティブです。
+"The confirmation token is invalid. Verify the token and try again.",確認トークンが無効です。トークンを確認して再度お試し下さい。
 "This account isn't confirmed. Verify and try again.",このアカウントは確認できません。確認して再度お試し下さい。
+"The password needs at least %1 characters. Create a new password and try again.","パスワードは %1 文字以上必要です。新しいパスワードを作成して再度お試し下さい。"
+"The password can't begin or end with a space. Verify the password and try again.",パスワードの始まりと終わりはスペースであってはなりません。パスワードを確認して再度お試し下さい。
+"The password can't be the same as the email address. Create a new password and try again.","パスワードはメールアドレスと同じにすることはできません。 新しいパスワードを作成し、再度お試し下さい。"
+"The store view is not in the associated website.",このストアビューはウェブサイトに関連付けられていません。
 "A customer with the same email address already exists in an associated website.",顧客と同じE-メールアドレスがすでに関連するウェブサイトに存在します。
 "The password token is mismatched. Reset and try again.",パスワードトークンが一致しません。リセットして再度お試し下さい。
 "The password token is expired. Reset and try again.",パスワードトークンが期限切れです。リセットして再度お試し下さい。
 "The transactional account email type is incorrect. Verify and try again.",トランザクションアカウントのメールタイプが正しくありません。確認して再度お試し下さい。
+"A valid password reset token is missing. Enter and try again.",有効なパスワードのリセットトークンがありません。入力して再度お試し下さい。
 "The customer email is missing. Enter and try again.",顧客のメールが見つかりません。入力して再度お試し下さい。
 "A customer website ID wasn't specified. The ID must be specified to use the website scope.",顧客ウェブサイトIDが指定されていません。ウェブサイトスコープを使用するにはIDを指定しなければなりません。
 """regionId"" is required. Enter and try again.","""regionId"" は必須です。入力して再度お試し下さい。"
@@ -4275,6 +4325,7 @@ Notified,通知済
 "The store credit payment has been removed from shopping cart.",ストアクレジットをカートから削除しました。
 "You are not using store credit in your shopping cart.",ショッピングカートで店舗クレジットを使用していません。
 "Please set a website ID.",ウェブサイトIDを設定してください。
+"By admin: %1.","管理者: %1."
 "By admin: %1. (%2)",管理者：%1(%2)
 "Please also set the Store ID.",店舗IDも設定してください。
 "Please enter a store ID to send email notifications.",電子メール通知を送信するには店舗IDを入力してください
@@ -4312,6 +4363,7 @@ available,利用可能
 "Store Credit Update Email Template",ストアクレジット更新メールテンプレート
 "A balance is needed to save a balance history.",残高履歴を保存するためには残高が必要です。
 "The balance history action code is unknown. Verify the code and try again.",残高履歴アクションコードが不明です。コードを確認して再度お試し下さい。
+"Customer Address Attributes",顧客住所属性
 "Edit Customer Address Attribute ""%1""","顧客アドレス属性の編集""%1"""
 "New Customer Address Attribute",新しい顧客住所属性
 "Lines Count",行数
@@ -5246,7 +5298,6 @@ History,履歴
 "You can't redeem a gift card now.",今ギフトカードと交換することはできません。
 "Gift Card ""%1"" was redeemed.","ギフトカード ""%1"" を償還しました。"
 "We cannot redeem this gift card.",このギフトカードは利用できません。
-"By admin: %1.","管理者: %1."
 "Could not save the gift card account.",ギフトカードとアカウントを保存できませんでした。
 "Could not delete the gift card account.",ギフトカードとアカウントを削除できませんでした。
 "The expiration date must be set in the future.",有効期限は将来の日付に設定する必要があります。
@@ -5816,7 +5867,20 @@ User,ユーザー
 "There is no file: %file","ファイルがありません: %file"
 "Empty attribute value constant",空の属性値定数
 "Incorrect entity name.",エンティティ名が正しくありません。
+"-- Not Selected --","-- 選択されていません --"
+"Validation Strategy",検証方法
+"Message is added to queue, wait to get your file soon",メッセージがキューに追加されました。ファイルはもうすぐ受信できます。
+"Please provide export file name",エクスポートするファイル名を指定してください
+"There are no export file with such name %1","%1 という名前のエクスポート済みファイルがありません。"
+"Your export file is ready",エクスポートファイルが利用できるようになりました
+"You can pick up your file at export main page",エクスポート済みファイルはエクスポートメインページでご確認いただけます
+"Error during export process occurred",エクスポート処理中にエラーが発生しました
+"Error during export process occurred. Please check logs for detail",エクスポート処理中にエラーが発生しました。詳細はログをご確認ください。
 "New product data is added to the existing product data for the existing entries in the database. All fields except sku can be updated.","データベース内の既存のエントリに存在する商品データに新しい商品データが追加されます。 skuを除くすべてのフィールドを更新できます。"
+"The existing product data is replaced with new data. <b>Exercise caution when replacing data because the existing product data will be completely cleared and all references in the system will be lost.</b>","既存の商品データは新しいデータに置き換えられます。 <b>実行上の注意: 既存の商品データは完全に消去され、作り直されます。システム内で対象の商品を参照しているデータとの整合性が取れなくなる恐れがあるのでご注意ください。</b>"
+"Any entities in the import data that already exist in the database are deleted from the database.",インポートされたデータの属するすべてのエンティティがデータベースから削除されます。
+"Are you sure you wan't to delete a file?",ファイルを削除してもよろしいですか。
+"File name",ファイル名
 "Indexer Management",インデックス処理管理
 "Update by Schedule",スケジュールアップデート
 "Update on Save",逐次更新
@@ -5873,6 +5937,7 @@ Integrations,インテグレーション
 "Uninstall the extension to remove this integration",このインテグレーションを削除するためにエクステンションをアンインストール
 Activate,有効化
 Reauthorize,再認証
+"Integration not secure",連携はセキュアではありません
 "Uninstall the extension to remove integration '%1'.","インテグレーションを削除するためにエクステンションをアンインストール '%1'."
 "This integration no longer exists.",このインテグレーションはもう存在しません
 "The integration '%1' has been deleted.","インテグレーション '%1' は削除されました"
@@ -7069,6 +7134,7 @@ Help,ヘルプ
 "Error processing payment, please try again later.",支払処理エラー。後で再度お試しください。
 "Authorization is not allowed.",オーソリアクションは許可されていません。
 "Payment Gateway is unreachable at the moment. Please use another payment option.",現在、支払いゲートウェイに到達できません。別の支払いオプションを使用してください。
+"PayPal response hasn't required fields.",PayPalレスポンスはフィールド必須ではありません。
 "Something went wrong while processing your order.",注文を処理中に問題が発生しました。
 "PayPal gateway has rejected request. %1","PayPalゲートウェイが要求を拒否しました %1"
 "The PayPal gateway rejected the request. %1","PayPalゲートウェイが要求を拒否しました。 %1"
