@@ -9966,7 +9966,7 @@ Synonyms,同義語
 "By Email",メールアドレス
 "Too many password reset requests. Please wait and try again or contact %1.","パスワードリセット要求が多すぎます。 お待ちいただきもう一度お試しいただくか、%1 にお問い合わせください。"
 "Incorrect Security Checker class. It has to implement SecurityCheckerInterface","セキュリティチェッカークラスが正しくありません。 SecurityCheckerInterfaceを実装する必要があります"
-"This administrator account is open in more than one location. Note that other locations might be different browsers or sessions on the same computer.","Tこの管理者アカウントは、複数の場所で開いています。 他の場所は、同じコンピュータ上のブラウザやセッションが異なる場合があります。"
+"This administrator account is open in more than one location. Note that other locations might be different browsers or sessions on the same computer.","この管理者アカウントは、複数の場所で開いています。 他の場所は、同じコンピュータ上のブラウザやセッションが異なる場合があります。"
 "Concurrent session information:",同時セッション情報:
 "Time of session start",セッション開始時刻
 "Are you sure that you want to log out all other sessions?",他のすべてのセッションをログアウトしてもよろしいですか？
