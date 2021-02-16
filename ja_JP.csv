@@ -1,7 +1,8 @@
-All,全て
+All,すべて
 None,なし
 "Allowed Scopes",許可されたスコープ
 "You need more permissions to apply some of the rule updates.",いくつかのルールアップデートを適用するには、さらに多くの権限が必要です。
+"More permissions are needed to view this item.",このアイテムを閲覧するための権限が不足してます
 "More permissions are needed to save this item.",このアイテムを保存するための権限が不足しています。
 "You need more permissions to access website ""%1"".","ウェブサイト""%1"" にアクセスする権限がありません。権限の設定を変更する必要があります。"
 "Role Scopes",権限範囲
@@ -1492,6 +1493,7 @@ Categories,カテゴリ
 "Invalid attribute %1","不正な属性 %1"
 Grid,表
 List,リスト
+All,全て
 "Bad controller interface for showing product",商品を表示するには不正なコントローラーインターフェイスです
 "Product is not loaded",商品が読み込まれていません。
 "Make sure the To Date is later than or the same as the From Date.",終了時期は開始時期より後か同じであることを確認してください
