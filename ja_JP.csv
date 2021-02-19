@@ -9726,6 +9726,8 @@ Worldpay,ワールドペイ
 "If you have questions about your order, you can email us at <a href=""mailto:%store_email"">%store_email</a>.","注文について質問がある場合は、 <a href=""mailto:%store_email"">%store_email</a>にEメールをお送りください。"
 "Backup options",バックアップオプション
 Warning,警告
+"Insert Variable",変数の挿入
+"The widget %1 is no longer available. Select a different widget.","ウィジェット %1 は使用できなくなりました。別のウィジェットを選択して下さい。"
 "Recent items",最近の商品
 "Show all...",全て表示...
 "Please enter a number greater 0 in this field.",0以上の数字を入力してください。
@@ -9736,6 +9738,8 @@ Warning,警告
 Translate,翻訳
 "No marginal white space please",余白を削除してください
 "Please remove invalid characters: {0}.","無効な文字を削除して下さい： {0}"
+"Forbidden extensions has been used. Avoid usage of ","ご利用いただけない拡張子が使用されました。次の拡張子はご使用いただけません "
+"First character must be letter.",最初の文字に数字や記号はご使用いただけません。
 "Please select one of the options above.",1つ以上のオプションを選択してください。
 "Please select a file.",ファイルを選択してください。
 "Please select one of the options.",1つ以上のオプションを選択してください。
@@ -9751,6 +9755,9 @@ Translate,翻訳
 "Please enter a valid number.",正しい数字を入力してください。
 "This is required field",必須項目です
 "Admin is a required field in each row.",Adminは各行に必須のフィールドです。
+"Please enter a quantity greater than 0.","0 より大きい数を入力してください。"
+"The maximum you may purchase is %1.","購入できる最大数は %1 です。"
+"The password can't be the same as the email address. Create a new password and try again.","パスワードはメールアドレスと同じにすることはできません。 新しいパスワードを作成し、再度お試し下さい。"
 "Please fix this field.",フィールドの値を修正してください。
 "Please enter a valid URL.",正しいURLを入力してください。
 "Please enter a valid date (ISO).",ISO規格の正しい日付を入力してください。
