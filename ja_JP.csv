@@ -1,4 +1,4 @@
-All,すべて
+All,"Default Category"
 None,なし
 "Allowed Scopes",許可されたスコープ
 "More permissions are needed to delete the ""%1"" item.","""%1"" を削除するための権限が不足しています。"
@@ -689,7 +689,6 @@ Minute,分
 "Report an Issue",問題を報告
 Scope:,スコープ:
 "Stores Configuration",ストア設定
-"Please confirm scope switching. All data that hasn't been saved will be lost.",スコープの変更を確認してください。保存されなかったデータは全て失われます。
 "Additional Cache Management",追加キャッシュ管理
 "Flush Catalog Images Cache",カタログ画像キャッシュ更新
 "Pregenerated product images files",事前に準備された商品画像ファイル
@@ -721,6 +720,7 @@ Loading...,読み込み中
 "User Agent Rules",ユーザーエージェントルール
 "Use Default Value",標準の値を使用
 "We could not detect a size.",サイズが不明でした。
+"Please confirm scope switching. All data that hasn't been saved will be lost.",スコープの変更を確認してください。保存されなかったデータは全て失われます。
 "Warning message",警告メッセージ
 "This operation can take a long time",このオペレーションは時間がかかります
 "Allow everything",すべてを許可する
@@ -2271,10 +2271,8 @@ End,終了
 "The ""%1"" value is invalid for stock ID. Enter stock with a default value of %2 to try again.","""%1"" の値は在庫IDには無効です。再度試すにはデフォルト値の""%2""の在庫を入力して下さい。"
 "The ""%1"" value is invalid for stock item ID. Enter either zero or a number than zero to try again.","""%1""の値は在庫アイテムIDには無効です。 0または0より大きい数字を入力して、再度お試し下さい。"
 "The ""%1"" value is invalid for stock item ID. Use the stock item ID's assigned ""%2"" value and try again.","""%1""の値は在庫アイテムIDには無効です。 在庫アイテムIDに割り当てられた""%2""の値を使用して、再度お試し下さい。"
-"Not all of your products are available in the requested quantity.",すべての商品を希望された数量準備することができませんでした。
-"The fewest you may purchase is %1.",購入の最低限数量は%1です。
 "Please correct the quantity for some products.",特定商品の数量を修正してください。
-"The most you may purchase is %1.",購入の最大限数量は%1です。
+"The fewest you may purchase is %1.",購入の最低限数量は%1です。
 "The requested qty is not available",要求された個数は利用できません
 "We don't have as many ""%1"" as you requested, but we'll back order the remaining %2."," 要求された""%1""数在庫がありませんでした, ですが残りの%2は取り寄せをおこないます。"
 "We don't have ""%1"" in the requested quantity, so we'll back order the remaining %2.","要求された""%1""数在庫がありませんでした, ですが残>
@@ -2461,7 +2459,6 @@ Path,パス
 "Catalog Products List",商品リスト
 "List of Products",商品一覧
 "Products Grid Template",商品グリッドテンプレート
-"Invalid method: %1","無効なメソッド: %1"
 "My Cart (1 item)","マイカート (1 アイテム)"
 "My Cart (%1 items)","マイカート (%1 アイテム)"
 "My Cart",マイカート
@@ -2518,6 +2515,7 @@ Checkout,レジに進む
 "Sorry, guest checkout is not available.",申し訳ありません、ゲスト購入は有効ではありません。
 "You must confirm your account. Please check your email for the confirmation link or <a href=""%1"">click here</a> for a new link.","アカウントを確認してください。Eメールにて確認リンクを確認するか<a href=""%1"">ここ</a> を新しいリンクのためにクリックしてください。"
 "Load customer quote error",顧客の見積もり読み込みエラー
+"Invalid method: %1","無効なメソッド: %1"
 Error!,エラー!
 "DB exception",DB例外
 "Print receipt",レシートを印刷
@@ -2556,6 +2554,7 @@ Total:,合計:
 "My billing and shipping address are the same",請求先住所と配送先住所は同じです
 Update,更新
 "Save in address book",アドレス帳に保存
+"Sorry, no quotes are available for this order at this time",申し訳ございません、お届け先が指定されていないため送料のお見積りをお出しすることができません。
 "Estimated Total",推定合計
 "You can create an account after checkout.",ご購入後にアカウントを作成できます。
 "You already have an account with us. Sign in or continue as guest.",すでにアカウントをお持ちのようです。ログインされますか?
@@ -2583,7 +2582,6 @@ edit,編集
 "Shipping Address",お届け先住所
 "New Address",新しい住所
 "Shipping Methods",配送方法
-"Sorry, no quotes are available for this order at this time",申し訳ございません、お届け先が指定されていないため送料のお見積りをお出しすることができません。
 "Order Summary",ご注文内容
 "Provided Zip/Postal Code seems to be invalid.",ご入力された郵便番号は正しくないようです。
 " Example: "," 例: "
@@ -2726,7 +2724,6 @@ Pages,ページ
 "We found a directory with the same name. Please try another folder name.",同じ名前のディクショナリーを見つけました。別のフォルダ名をお試しください。
 "We cannot create a new directory.",新しいディクショナリーを作成できません。
 "We cannot delete directory %1.","ディクショナリー %1 を削除できません。"
-"We can't upload the file to current folder right now. Please try another folder.",現在、現在のフォルダーにファイルをアップロードできません。別のフォルダーを試してください。
 "We can't upload the file right now.",現在ファイルをアップロードできません。
 "We can't delete root directory %1 right now.","現在ルートディレクトリ %1 を削除できません。"
 "Privacy and Cookie Policy",プライバシーポリシー
@@ -3176,7 +3173,6 @@ Reverted,回復済
                         顧客は、信用通貨を更新するまで注文を行うことができません。"
 "Store Credit",ストアクレジット
 "Refund to Company Credit",会社クレジットに返金する
-"An invoice for partial quantities cannot be issued for this order. To continue, change the specified quantity to the full quantity.","この注文に対しては、部分的な量の請求書を発行することはできません。 続行するには、指定した数量を全量に変更して下さい。"
 "We refunded %1 online.","%1 をオンラインで返金しました。"
 "We refunded %1 offline.",%1をオフラインで返金しました。
 "We refunded %1 to the company credit.","%1 を会社のクレジットに返金しました。"
@@ -3441,13 +3437,13 @@ Select,選択
 "Create Product Configurations",商品設定をしてください
 "Buy %1 for %2 each and","%1 点お買い上げで1点あたり %2"
 save,お値引き
+"Disable Product",製品を無効にする
+"Enable Product",有効
 "New Product Review",新製品レビュー
 "Here are the products you're about to create.",作成しようとしている製品は次のとおりです。
 "You created these products for this configuration.",この構成では、これらの製品を作成しました。
 "Disassociated Products",分離された製品
 "These products are not associated.",これらの製品は関連していません。
-"Disable Product",製品を無効にする
-"Enable Product",有効
 "An attribute has been removed. This attribute will no longer appear in your configurations.",属性は削除されました。この属性が設定には今後現れません。
 "Select options for all attributes or remove unused attributes.",全ての属性のオプションを選択するか使われてない属性を削除してください。
 "Choose this option to delete and replace extension data for all past configurations.",このオプションを選択して、過去の設定に関するエクステンションデータを削除または置換してください。
@@ -5479,7 +5475,6 @@ User,ユーザー
 Ready,準備完了
 Processing,処理中
 "has been rebuilt successfully in %time","は %time に正常に再構築されました。"
-"exception: %message",例外：%message
 "%1 index is locked by another reindex process. Skipping.",%1インデックスは別の再インデックスプロセスによってロックされています。スキップします。
 "Index Management",インデックス管理
 "Please select indexers.",インデックス処理を選択してください
@@ -5555,7 +5550,6 @@ Reauthorize,再認証
 "The tokens couldn't be revoked.",トークンは破棄することができませんでした。
 "An error occurred during the attempt to grant permissions. For details, see the exceptions log.",許可を受諾中にエラーが発生しました。詳細については、例外ログを参照して下さい。
 "Something went wrong while deleting roles and permissions. You can find out more in the exceptions log.",ロールと権限を削除中に問題が発生しました。例外ログにて詳細が確認できます。
-"This customer has no tokens.",この顧客にはトークンがありません
 "The integration with name ""%1"" exists.","""%1""という名のインテグレーションが存在します。"
 "The integration with ID ""%1"" doesn't exist.","ID ""%1"" のインテグレーションは存在しません。"
 "One or more <a href=""%1"">integrations</a> have been reset because of a change to their xml configs.","1つまたは複数の<a href=""%1"">統合</a>が、xml構成の変更によりリセットされました。"
@@ -6967,7 +6961,6 @@ Create...,作成...
 "Your credit card will be charged for",クレジットカードでお支払いただく金額
 "Your billing agreement # is: ","あなたの支払合意番号は: "
 "Please select a shipping method...",送付方法を選んで下さい...
-"Update Shipping Method",配送方法をアップデート
 "Buy now with PayPal",PayPalで購入しましょう
 "Edit Payment Information",支払情報編集
 "Items in Your Shopping Cart",ショッピングカートにある商品
@@ -7053,6 +7046,7 @@ Display,表示
 "Catalog Category Page",カタログカテゴリページ
 "Catalog Product Page",カタログプロダクトページ
 "Checkout Cart Page",チェックアウトカートページ
+Color,色
 "Basic Settings - PayPal Express Checkout","基本設定 - PayPalエクスプレスチェックアウト"
 "Display on Product Details Page",商品詳細ページに表示
 "Authorization Honor Period (days)","認証オナー期間 (日)"
@@ -7110,7 +7104,6 @@ Display,表示
 "Mexico Installment Period",メキシコ分割払い
 "Brazil Installment Period",ブラジル分割払い
 Shape,形
-Color,色
 "Product Pages",商品ページ
 "Cart Page",カートページ
 Features,機能
@@ -8631,7 +8624,6 @@ Complete,完了
 "Product doesn't exist",商品は存在しません
 "Email has not been sent",メールは送られていません
 "Authorized amount of %1","オーソリ済金額 %1"
-" Transaction ID: ""%1""","トランザクションID: ""%1"""
 "Sample message.",サンプルメッセージ。
 "Group was removed",グループが削除されました
 "Update Totals",合計更新
@@ -9160,7 +9152,6 @@ Synonyms,同義語
 "Remove Recipent",受取人削除
 "Welcome, %name","ようこそ, %name"
 "%sender_name wants to share this product with you:","%sender_name はこの商品をあなたとシェアしたがっています:"
-"We strongly recommend to enable a <a href=""https://devdocs.magento.com/guides/v2.3/security/google-recaptcha.html"" target=""_blank"">CAPTCHA solution</a> alongside enabling ""Email to a Friend"" to ensure abuse of this feature does not occur.","この機能の不正使用を防ぐため、<a href=""https://devdocs.magento.com/guides/v2.3/security/google-recaptcha.html""ターゲット=""_blank "">CAPTCHAソリューション</a>を有効にし、[友だちに電子メール]を有効にすることを強くお勧めします。"
 "Select Email Template",メールテンプレートを選択
 "Allow for Guests",ゲストに許可する
 "Max Recipients",最大受信者数
@@ -9361,7 +9352,6 @@ Track:,追跡:
 "See our Shipping Policy",配送ポリシーをご覧ください。
 "Shipping Settings Section",配送設定欄
 "Shipping Policy Parameters Section",配送ポリシーパラメーターセクション
-"Shipping Methods Section",配送方法欄
 "Shipping Settings",配送設定
 Origin,発送元
 "Shipping Policy Parameters",配送ポリシーパラメーター
@@ -9525,12 +9515,12 @@ Includes,含む
 "Store with the same code",同じコードの店舗です
 "Website with the same code",同じコードのウェブサイトです
 "Website code may only contain letters (a-z), numbers (0-9) or underscore (_), and the first character must be a letter.","ウェブサイトコードは文字 (a-z), 数字 (0-9) かアンダースコア (_)を含んでいなければなりません、そして最初のキャラクターは文字でなければなりません。"
-"Name is required",名前が必須です
-"The store code may contain only letters (a-z), numbers (0-9) or underscore (_), and the first character must be a letter.","ストアコードは文字 (a-z), 数字 (0-9) かアンダースコア (_)を含んでいなければなりません、そして最初のキャラクターは文字でなければなりません。"
 "Store is inactive",ストアは無効です
 "Invalid store parameter.",ストアパラメータが無効です。
 "Default store is inactive",デフォルトストアは無効です
 "The store cannot be switched.",ストアを切り替えられません。
+"The store code may contain only letters (a-z), numbers (0-9) or underscore (_), and the first character must be a letter.","ストアコードは文字 (a-z), 数字 (0-9) かアンダースコア (_)を含んでいなければなりません、そして最初のキャラクターは文字でなければなりません。"
+"Name is required",名前が必須です
 "The default website isn't defined. Set the website and try again.",デフォルトのウェブサイトが定義されていません。ウェブサイトを設定して再度お試し下さい。
 "The default website is invalid. Make sure no more than one default is defined and try again.",デフォルトのウェブサイトが無効です。複数のデフォルトが定義されていないことを確認し、再度お試し下さい。
 "no such entity exception",そのようなエンティティ例外はありません
@@ -9983,6 +9973,7 @@ Themes,テーマ
 "Allowed file types *.js.","許可されたファイルタイプ *.js."
 "Insert File",ファイル挿入
 welcome,ようこそ
+"We cannot find a theme with id ""%1"".","id ""%1""のテーマがみつかりません"
 "You deleted the theme.",テーマを削除しました
 "We cannot delete the theme.",テーマを削除できません
 "File not found: ""%1"".","ファイルが見つかりません: ""%1""."
@@ -9992,7 +9983,6 @@ welcome,ようこそ
 "This theme is not editable.",このテーマは編集できません
 "You saved the theme.",テーマを保存しました
 "We can't upload the CSS file right now.",現在CSSファイルをアップロードできません
-"We cannot find a theme with id ""%1"".","id ""%1""のテーマがみつかりません"
 "We can't upload the JS file right now.",現在JSファイルをアップロードできません
 "Sorry, something went wrong. That's all we know.",申し訳ありません、エラーが発生いたしました。原因調査中です。
 "Invalid type",不正なタイプ
@@ -10181,8 +10171,6 @@ Keyword,キーワード
 "Please enter a valid URL Key (Ex: ""example-page"", ""example-page.html"" or ""anotherlevel/example-page"").","有効なURLキーを入力して下さい (例: ""example-page"", ""example-page.html"" あるいは ""anotherlevel/example-page"")。"
 "Please enter a valid zip code.",正しい郵便番号を入力してください。
 "Please select State/Province.",地域を選択してください
-"Please enter a value less than or equal to {0}.",{0}以下の値を入力してください。
-"Please enter a value greater than or equal to {0}.",{0}以上の値を入力してください。
 "Please enter valid email addresses, separated by commas. For example, johndoe@domain.com, johnsmith@domain.com.","正しいメールアドレスを「,」で区切って入力してください。（例）johndoe@domain.com, johnsmith@domain.com."
 "Please enter issue number or start date for switch/solo card type.",switch/soloカード・タイプのイシュー番号あるいは開始日を入力してください
 "Please enter positive number in this field.",このフィールドには使用可能な数字を入力してください。
@@ -10954,6 +10942,8 @@ Translate,翻訳
 "Please enter at least {0} characters.","最低 {0} 文字を入力してください。"
 "Please enter a value between {0} and {1} characters long.","{0} 文字以上 {1} 文字以下の正しい値を入力してください。"
 "Please enter a value between {0} and {1}.","{0} 以上 {1} 以下の正しい値を入力してください。"
+"Please enter a value less than or equal to {0}.",{0}以下の値を入力してください。
+"Please enter a value greater than or equal to {0}.",{0}以上の値を入力してください。
 "Please enter a date between %min and %max.","%min から %maxの間で日付を入力してください。"
 "Please enter a valid full date.",正しい完全な日付を入力してください。
 "Please enter a valid month (1-12).","正しい月を入力してください (1-12)."
