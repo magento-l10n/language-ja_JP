@@ -2714,6 +2714,7 @@ Modified,更新日
 "Are you sure you want to delete this file?",本当にこのファイルを削除しますか?
 "Images (%1)","画像 (%1)"
 "Storage Root",ストレージルート
+"The CMS block with identifier ""%identifier"" is not enabled.","""%identifier""持っている静的なブロックは有効になっていません。"
 "You deleted the block.",ブロックを削除しました。
 "We can't find a block to delete.",削除するブロックが見つかりません。
 "This block no longer exists.",このブロックは存在していません。
@@ -2740,6 +2741,7 @@ Pages,ページ
 "Directory %1 is not under storage root path.","ディレクトリー %1 はストレージルートパスの下にありません。"
 "Can't create %1 as subdirectory of %2, you might have some permission issue.",%2のサブディレクトリとして%1を作成できません。アクセス許可の問題が発生している可能性があります。
 "Make sure that static block content does not reference the block itself.",静的ブロックコンテンツがブロック自身を参照しないように気をつけてください。
+"Content field contains restricted HTML elements. %1","コンテンツには制限された HTML タグが含まれています。 %1"
 "The CMS block with the ""%1"" ID doesn't exist.","ID ""%1"" のCMSブロックは存在しません。"
 "Enabled by Default",標準で有効
 "Disabled by Default",標準で無効
@@ -2748,9 +2750,11 @@ Pages,ページ
 "This identifier is reserved for ""CMS No Route Page"" in configuration.","この識別子は、構成内の ""CMS No Route Page"" 用に留保されています。"
 "This identifier is reserved for ""CMS Home Page"" in configuration.","この識別子は、設定の ""CMSホームページ"" 用に留保されています。"
 "This identifier is reserved for ""CMS No Cookies Page"" in configuration.","この識別子は、構成内の ""CMS No Cookies Page"" 用に留保されています。"
+"Content HTML contains restricted elements. %1","コンテンツには制限された HTML タグが含まれています。 %1"
 "You are not allowed to change CMS pages design settings",CMSページのデザイン設定を変更することはできません
 "Invalid Custom Layout Update selected",無効なカスタムレイアウトの更新が選択されました
 "Page ""%id"" doesn't have custom layout assigned","ページ""%id ""にはカスタムレイアウトが割り当てられていません"
+"Custom layout update text cannot be changed, only removed",カスタムレイアウト更新テキストは変更できません。削除するだけです
 "Could not save the page: %1","ページを保存できませんでした: %1"
 "Could not delete the page: %1","ページを削除できませんでした: %1"
 "The value specified in the URL Key field would generate a URL that already exists.",URLキーフィールドで指定された値は、すでに存在するURLを生成します。
@@ -2761,16 +2765,23 @@ Pages,ページ
 "The page URL key can't use capital letters or disallowed symbols. Remove the letters and symbols and try again.","ページURLキーでは、大文字または許可されていない記号は使用できません。 文字と記号を削除して、再度お試し下さい。"
 "The page URL key can't use only numbers. Add letters or words and try again.",ページURLキーは数字のみでは使用できません。文字や単語を追加して再度お試し下さい。
 "Please rename the folder using only Latin letters, numbers, underscores and dashes.",ラテン文字、数字、アンダースコア、ダッシュのみを使用してフォルダー名を変更してください。
+"We cannot create the folder under the selected directory.",選択したディレクトリの下にフォルダを作成できません。
 "We found a directory with the same name. Please try another folder name.",同じ名前のディクショナリーを見つけました。別のフォルダ名をお試しください。
 "We cannot create a new directory.",新しいディクショナリーを作成できません。
+"We cannot delete the selected directory.",選択したディレクトリは削除できません。
 "We cannot delete directory %1.","ディクショナリー %1 を削除できません。"
+"We can't delete the file right now.",現在ファイルを削除できません。
+"We can't upload the file to the current folder right now. Please try another folder.",選択フォルダーにファイルをアップロードできません。別のフォルダーを試してください。
 "We can't upload the file right now.",現在ファイルをアップロードできません。
 "We can't delete root directory %1 right now.","現在ルートディレクトリ %1 を削除できません。"
+"Temporarily allowed to save HTML value that contains restricted elements. %1",制限されたHTMLタグを一時的に保存できます。%1
+"Invalid HTML provided",不正なHTMLが提供されました
 "Privacy and Cookie Policy",プライバシーポリシー
 "Error message",エラーメッセージ
 "Could not create a directory.",ディレクトリを作成できませんでした。
 "Oh no. That isn't right.",ああいや。そうじゃない。
 "Invalid format",無効な形式
+"Invalid html",無効なhtml
 "Are you sure you want to delete a %1 record?","%1 のレコードを削除してもよろしいですか?"
 View,表示
 "No files found",ファイルが見つかりません
@@ -4180,6 +4191,8 @@ available,利用可能
 "Choose Website:",ウェブサイトを選択:
 "This is your default billing address.",これがデフォルトの請求先住所です。
 "This is your default shipping address.",これがデフォルトの配送先住所です。
+Upload,アップロード
+"Click here or drag and drop to add files.",ここをクリックするまたはドラッグアンドドロップしてファイルを追加します。
 "Customer Address",顧客住所
 "Please specify a finance information website.",財務情報ウェブサイトを指定してください。
 "Please specify a valid finance information website.",有効な財務情報ウェブサイトを指定してください。
@@ -5199,12 +5212,16 @@ Private,プライベート
 "We cannot specify the product.",製品を指定することはできません。
 "The gift registry item quantity is incorrect. Verify the item quantity and try again.",ギフトレジストリアイテムの数量が正しくありません。アイテムの数量を確認して再度お試し下さい。
 "The gift registry item ID is incorrect. Verify the gift registry item ID and try again.",ギフトレジストリアイテムIDが正しくありません。ギフトレジストリアイテムIDを確認して再度お試し下さい。
+"The registrant with ID=%1 doesn't belong to the current gift registry.","ID=%1 のギフトレジストリアイテムは現在のギフトレジストリに属していません。"
+"We can't add product to the gift registry right now.",商品をギフトレジストリに追加することはできません。
+"The registrant with id=""%1"" was not found.","登録者ID=""%1"" は見つかりませんでした。"
 "The quantity of ""%1"" product added to cart exceeds the quantity desired by the Gift Registry owner. The quantity added has been adjusted to meet remaining quantity %2.","カートに追加された ""%1"" 製品の数量が、ギフト・レジストリの所有者が希望する数量を超えています。 追加量は残りの量 %2 に合わせて調整されています。"
 "Existing quantity of ""%1"" product in the cart has been replaced with quantity %2 just requested.","カート内の既存の ""%1""製品の数量が、要求された量 %2 に置き換えられました。"
 "This product(s) is out of stock.",この商品は在庫切れです。
 "Please correct the product for adding the item to the quote.",商品を見積もりに追加するには、商品を修正してください。
 "Please correct the item option format.",アイテムのオプション形式を修正してください。
 "An item option with code %1 already exists.",コード%1の商品オプションは既に存在します
+"GiftRegistry item filters must implement %1.","ギフトレジストリアイテムフィルタは %1 を実装する必要があります。"
 New,新規
 "Please enter the first name.",名を入力してください。
 "Please enter the last name.",姓を入力してください。
@@ -5279,6 +5296,7 @@ Location,場所
 "You can view and purchase items from this gift registry at <a href='%account_url'>%store_name</a>.","<a href='%account_url'>%store_name</a>でこのギフトレジストリからアイテムを表示して購入することができます。"
 "Gift Registry:",ギフトレジストリ:
 "Created For:",作成者:
+"<strong>Registry Location:</strong> <a href='%registry_url'>%registry_url</a>","<strong>レジストリの場所:</strong> <a href='%registry_url'>%registry_url</a>"
 "You can create your own gift registry on <a href='%account_url'>%store_name</a> and share it with friends and family.","<a href='%account_url'>％store_name </a>に自分のギフトレジストリを作成し、それを友人や家族と共有することができます。"
 "Gift Registry updated at %store_name",ギフトレジストリが%store_nameで更新されました
 "The following items have been purchased from your gift registry ""%registry_name"":","以下のアイテムはギフトレジストリ ""%registry_name""から購入しました。:"
@@ -5398,6 +5416,7 @@ Creative,クリエイティブ
 "Grouped Products",グループ商品
 "Please specify the quantity of product(s).",商品の個数を指定してください。
 "Cannot process the item.",商品を処理できません
+"Please specify id and qty for grouped options.",グループ化オプションにはIDと数量を指定してください。
 "Add Products to Group",商品をグループに追加
 "A grouped product is made up of multiple, standalone products that are presented as a group. You can offer variations of a single product, or group them by season or theme to create a coordinated set. Each product can be purchased separately, or as part of the group.","グループ化された製品は、グループとして提示される複数のスタンドアロン製品で構成されています。 1つの製品のバリエーションを提供することも、シーズンやテーマ別にグループ化してコーディネートされたセットを作成することもできます。各製品は個別に、またはグループの一部として購入することができます。"
 "There are no grouped products.",グループ商品はありません
@@ -5430,6 +5449,7 @@ Filter,フィルタ
 "Select File to Import",インポートするファイルを選択
 "File must be saved in UTF-8 encoding for proper import",正しくインポートするためには、ファイルを文字コードUTF-8で保存する必要があります。
 "Images File Directory",画像ファイルディレクトリ
+". ', e.g. <i>product_images</i>, <i>import_images/batch1</i>.<br><br>For example, in case <i>product_images</i>, files should be placed into <i>&lt;Magento root directory&gt;/' . . '/product_images</i> folder.<br><br>If remote storage is enabled, in case <i>product_images</i>, files should be placed into <i>&lt;Remote Storage&gt;/' . . '/product_images</i> folder.' 'i' 'br'","。 '、例： <i> product_images </i>、<i> import_images / batch1 </i>。<br><br>たとえば、<i> product_images </i>の場合、ファイルは<i>&lt;に配置する必要があります。 Magentoルートディレクトリ&gt;/'。 。 '/ product_images </i>フォルダ。<br><br>リモートストレージが有効になっている場合、<i> product_images </i>の場合、ファイルは<i>&lt;リモートストレージ&gt;/'に配置する必要があります。 。 '/ product_images</i>フォルダー。' 'i''br'"
 "Download Sample File",ダウンロードサンプルファイル
 "Message is added to queue, wait to get your file soon. Make sure your cron job is running to export the file",メッセージがキューに追加されました。ファイルの取得が完了するまでお待ちください。cronジョブが実行中であり、ファイルを書き出していることを確認してください
 "Please correct the data sent value.",送られたデータの値を修正してください。
@@ -5523,6 +5543,7 @@ Replace,置き換え
 "Are you sure you wan't to delete a file?",ファイルを削除してもよろしいですか。
 "Entity Attributes",エンティティ属性
 "Validation Results",検証結果
+"Content of uploaded file was changed, please re-upload the file",アップロードされたファイルの内容が変更されました。ファイルを再度アップロードしてください。
 "Invalid response",無効な応答
 "Start Date&Time",開始日付
 User,ユーザー
@@ -5547,6 +5568,7 @@ Processing,処理中
 "We couldn't invalidate indexer(s) because of an error.",エラーのため、インデクサを無効にできませんでした。
 "%1 indexer(s) are in ""Update on Save"" mode.","%1iインデックス処理は""Update on Save""モードです。"
 "One or more <a href=""%1"">indexers are invalid</a>. Make sure your <a href=""%2"" target=""_blank"">Magento cron job</a> is running.","1つかそれ以上の<a href=""%1"">インデックス処理は無効です</a>。 <a href=""%2"" target=""_blank"">Magento cron ジョブ</a>が動いているか確認してください。"
+"Child process failed with message: %1","子プロセスがメッセージで失敗しました: %1"
 "State for the same indexer",同じインデックス処理のための状態
 "State for the same view",同じビューのための状態
 "Field '%1' not found","フィールド  '%1' が見つかりません"
@@ -5613,6 +5635,7 @@ Reauthorize,再認証
 "The tokens couldn't be revoked.",トークンは破棄することができませんでした。
 "An error occurred during the attempt to grant permissions. For details, see the exceptions log.",許可を受諾中にエラーが発生しました。詳細については、例外ログを参照して下さい。
 "Something went wrong while deleting roles and permissions. You can find out more in the exceptions log.",ロールと権限を削除中に問題が発生しました。例外ログにて詳細が確認できます。
+"Failed to revoke customer's access tokens",顧客のアクセストークンの取り消しに失敗しました
 "The integration with name ""%1"" exists.","""%1""という名のインテグレーションが存在します。"
 "The integration with ID ""%1"" doesn't exist.","ID ""%1"" のインテグレーションは存在しません。"
 "One or more <a href=""%1"">integrations</a> have been reset because of a change to their xml configs.","1つまたは複数の<a href=""%1"">統合</a>が、xml構成の変更によりリセットされました。"
@@ -5931,6 +5954,7 @@ Synchronizing...,同期中...
 "The ""%1"" file doesn't exist. Verify the file and try again.","""%1"" ファイルがありません。ファイルを確認して再度お試し下さい。"
 "File %1 is not readable",ファイル%1は読み込めません
 "File System",ファイルシステム
+"Database (Deprecated)","データベース (非推奨)"
 "Sorry, something went wrong during image resize. Please see log for details.",画像のサイズを変更中に問題が発生しました。詳しくはログを参照してください。
 "database ""%1""","データベース ""%1"""
 "Parent directory does not exist: %1","親ディレクトリが存在しません: %1"
@@ -6005,6 +6029,12 @@ Wishlist,欲しいものリスト
 "Owner Email",オーナーのメール
 "%1's Wish List","%1 のほしい物リスト"
 "%1's Wish List (%2)",%1さんのほしい物リスト(%2)
+"The quantity %quantity is invalid.","数量 %quantity は無効です。"
+"The maximum quantity that can be copied for ""%sku"" is %quantity.","""%sku""にコピーできる最大数量は %quantityです。"
+"The ""%product"" is already present in ""%wishlist""","""%product""は既に""%wishlist""に存在しています"
+"The maximum quantity that can be moved for ""%sku"" is %quantity.","""%sku""の移動できる最大数量は %quantityです。"
+"""%product"" is already present in %wishlist.","""%product""は既に""%wishlist""に存在しています"
+"We cannot move %product.","%product を移動できません。"
 "Sign in to edit wish lists.",ほしい物リストを編集するにはログインしてください。
 "The wish list is not assigned to your account and can't be edited.",ほしい物リストはあなたのアカウントに割り当てられておらず、編集できません。
 "Provide the wish list name.",ほしい物リスト名を指定します。
@@ -6380,6 +6410,7 @@ Expires:,失効:
 "Your quote ","あなたの見積もり "
 " has been declined by the seller."," 販売者に拒否されました。"
 "Reason: %reason.","理由: %reason"
+"%customer_name,",%customer_name、
 " expires on "," で期限切れ "
 " after which time you can’t order the items in the quote. After the expiration,
     you’ll have to negotiate the price with the seller again."," その後は、見積もりの商品を注文できません。有効期限が切れた後、
@@ -6399,6 +6430,9 @@ Expires:,失効:
 "Item in Quote",見積もりの商品
 "Items in Quote",見積もりの商品
 "Cancel coupon",クーポンをキャンセル
+"Show All Quotes",すべての見積を表示
+"Show My Quotes",私の見積を表示
+"The shipping address specified on the quote was deleted from your Address Book.",見積もりで指定された配送先住所がアドレス帳から削除されました。
 "Update Catalog Prices",カタログ価格を更新
 "If you proceed, catalog prices and cart discounts on this quote will be updated as per the latest changes in the catalog and the price rules.",続行すると、この見積もりのカタログ価格およびカート割引は、カタログおよび価格ルールの最新の変更に従って更新されます。
 "Please enter a number greater than 0 in this field",0以上の数を入力してください。
@@ -6447,6 +6481,7 @@ Quote,見積もり
 "Quote Expiration (in 48 hrs)",見積もり期限（48時間後）
 "Quote Expiration (in 24 hrs)",見積もり期限（24時間後）
 "Expiration Date Reset",有効期限日のリセット
+"Expiration Date Occurred",有効期限日発生
 "Send Quote Email Copy To",見積もりメールのコピー送信先
 "Send Quote Email Copy Method",見積もりコピーメール送信方法
 "Request, Edit, Delete",リクエスト、編集、削除
@@ -6990,6 +7025,19 @@ Installment,定期請求
 "Every 30 days",毎30日
 "Every 40 days",毎40日
 "No Logo",ロゴなし
+White,白
+"White No Border",白・線なし
+Gray,グレー
+Monochrome,モノクロ
+Grayscale,グレースケール
+Left,左
+Right,右
+Top,トップ
+Primary,プライマリー
+Alternative,代替
+Inline,インライン
+Sidebar,サイドバー
+Flex,フレックス
 "Yes (PayPal recommends this option)","はい (PayPalはこのオプションを推奨します)"
 "Created billing agreement #%1.","支払契約を作成 #%1."
 "We can't create a billing agreement for this order.",この注文のための支払契約を作成できません。
@@ -7090,6 +7138,7 @@ Manage,管理
                         You get paid up front, even though customers have more time to pay. A pre-integrated payment button lets customers pay quickly with PayPal Credit&#174;.
                         <a href=""https://www.paypal.com/webapps/mpp/promotional-financing"" target=""_blank"">Learn More</a>","PayPal Express Checkoutを使用すると、顧客はPayPalクレジットを介して資金調達にアクセスできます。追加費用なしで。顧客が支払う時間がもっとあるとしても、前払いされます。事前に統合された支払いボタンにより、顧客はPayPalクレジット&#174; ですばやく支払いできます<a href=""https://www.paypal.com/webapps/mpp/promotional-financing"" target=""_blank"">詳細を見る</a>"
 "Sort Order PayPal Credit",PayPalクレジットをソートする
+"Enable PayPal PayLater Experience","PayPal 後払いエクスペリエンスを有効にする"
 "Advertise PayPal Credit",PayPalクレジットを広告化
 "<a href=""https://financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
                         <strong>Give your sales a boost when you advertise financing.</strong><br/>PayPal helps turn browsers into buyers with financing
@@ -7109,7 +7158,16 @@ Display,表示
 "Catalog Category Page",カタログカテゴリページ
 "Catalog Product Page",カタログプロダクトページ
 "Checkout Cart Page",チェックアウトカートページ
+"Advertise PayPal PayLater",PayPal後払いを広告する
+"Enable PayPal PayLater",PayPal後払いを有効にする
+"Style Layout",スタイルレイアウト
+"Logo Type",ロゴのタイプ
+"Logo Position",ロゴの位置
+"Text Color",テキストの色
+"Text Size",文字サイズ
+Ratio,比率
 Color,色
+"Checkout Payment Step",チェックアウトのお支払いステップ
 "Basic Settings - PayPal Express Checkout","基本設定 - PayPalエクスプレスチェックアウト"
 "Display on Product Details Page",商品詳細ページに表示
 "Authorization Honor Period (days)","認証オナー期間 (日)"
@@ -7291,6 +7349,9 @@ PayPal宣伝プログラムは、消費者の平均購入サイズを15％増加
 "The product was not found.",商品が見つかりません。
 "You will no longer receive stock alerts.",在庫更新通知を受信しなくなります。
 "Invalid block type: %1","無効なブロックタイプ: %1"
+"Product alerts are sent successfully.",製品アラートは正常に送信されます。
+"Sorry, something went wrong during mailing product alerts. Please see log for details.",申し訳ありません、製品アラートtのメール送信中に問題が発生しました。詳細はエラーログをご覧ください。
+"Mailing of Product Alerts",製品アラートのメール
 "Price change alert! We wanted you to know that prices have changed for these products:","価格変更アラート! これらの商品の値段が変わったことをお知らせします:"
 Price:,価格:
 "Click here to stop alerts for this product.",この商品のアラートを止めるにはここを押して下さい。
@@ -7329,6 +7390,7 @@ Duration:,長さ:
 "Youtube API key is invalid","Youtube API キーは無効です"
 "Video cant be shown due to the following reason: ","以下の理由によりビデオが見つかりません: "
 "Video not found",ビデオが見つかりません
+"Because of its privacy settings, this video cannot be played here.",プライバシー設定のため、この動画はここで再生できません。
 "New Video",新規ビデオ
 "Edit Video",ビデオ編集
 "Images and Videos",画像と動画
@@ -7343,6 +7405,9 @@ Duration:,長さ:
 "Edit Automated Email Reminder Rules",自動リマインダールールを編集
 "Quick Order",クイックオーダー
 "There is no items to delete",削除する項目はありません
+"Cannot update item list.",欲しい物リストを更新できません。
+"Entered list is empty.",入力されたリストは空です
+"You entered item(s) with an empty SKU.",空のSKUを持つアイテムを入力しました。
 "The uploaded CSV file does not contain a column labelled SKU. Make sure the first column is labelled SKU and that each line in the file contains a SKU value. Then upload the file again.","アップロードされたCSVファイルには、SKUというラベルの列は含まれていません。 最初の列にはSKUというラベルが付けられ、ファイルの各行にはSKUの値が含まれていることを確認してください。 確認後、ファイルを再度アップロードして下さい。"
 "You should correct the quantity for the product.",商品の数量を修正してください。
 "The SKU is out of stock.",SKUは在庫切れです。
@@ -7408,6 +7473,7 @@ Duration:,長さ:
 "Entity Id does not exist",エンティティIDが存在しません
 Carts,カート
 "Manage carts",カートを管理する
+"Enable Inventory Check On Cart Load",カート読み込みのとき在庫チェックを有効にする
 "Please check the shipping address information.",発送住所情報を確認してください。
 "Please check the billing address information.",請求先情報を確認してください。
 "Enter a valid payment method and try again.",有効なお支払い方法を入力し、再度お試し下さい。
@@ -8793,7 +8859,6 @@ Complete,完了
 "Your Invoice #%invoice_id for Order #%order_id",注文#%order_idのあなたの請求書#%invoice_id
 "Update to your %store_name invoice","%store_name 請求書への更新"
 "Your %store_name order confirmation","あなたの %store_name 注文の確認"
-"%customer_name,",%customer_name、
 "Once your package ships we will send you a tracking number.",荷物が配送された後に追跡番号をお送りします。
 "Your Order <span class=""no-link"">#%increment_id</span>","あなたの注文 <span class=""no-link"">#%increment_id</span>"
 "Placed on <span class=""no-link"">%created_at</span>","ご注文日 <span class=""no-link"">%created_at</span>"
@@ -9769,7 +9834,6 @@ Method,メソッド
 Collapse,畳む
 Expand,拡張
 " (no data)"," (データがありません)"
-Top,トップ
 "No data",データなし
 "Support Data Collector",サポートデータコレクタ
 "Support System Report",サポートシステムレポート
@@ -10151,6 +10215,7 @@ Translations,翻訳
 "Select from Gallery",ギャラリーから選択
 "Allowed file types",許可されるファイルタイプ
 "Save View As...",別名で保存...
+"Save all changes",すべての変更を保存
 Columns,列
 "Record contains unsaved changes.",レコードに保存されていない変更が含まれています。
 "Clear all",すべてクリア
@@ -10229,6 +10294,7 @@ Keyword,キーワード
 "Please enter a valid URL Key (Ex: ""example-page"", ""example-page.html"" or ""anotherlevel/example-page"").","有効なURLキーを入力して下さい (例: ""example-page"", ""example-page.html"" あるいは ""anotherlevel/example-page"")。"
 "Please enter a valid zip code.",正しい郵便番号を入力してください。
 "Please select State/Province.",地域を選択してください
+"Please enter a value greater than or equal to %s.",%s以上の値を入力してください。
 "Please enter valid email addresses, separated by commas. For example, johndoe@domain.com, johnsmith@domain.com.","正しいメールアドレスを「,」で区切って入力してください。（例）johndoe@domain.com, johnsmith@domain.com."
 "Please enter issue number or start date for switch/solo card type.",switch/soloカード・タイプのイシュー番号あるいは開始日を入力してください
 "Please enter positive number in this field.",このフィールドには使用可能な数字を入力してください。
@@ -10328,6 +10394,7 @@ error_message,エラーメッセージ
 "UPS API endpoint URL's must use ups.com","UPS APIエンドポイントURLはups.comを使用する必要があります。"
 "United Parcel Service",共通郵便サービス
 "United Parcel Service XML",共通郵便サービスXML
+"Status Updated On:",ステータス更新時点:
 "Access License Number",アクセスライセンス番号
 Container,梱包
 "Destination Type",対象種別
@@ -10455,6 +10522,8 @@ username,ユーザー名
 "Forgot your password?",パスワードをお忘れですか？
 "Reset a Password",パスワードリセット
 "Roles Resources",権限リソース
+"Warning!<br>This action will remove this user from already assigned role.<br>Are you sure?",警告！<br>このアクションは既に割り当てられたロールからこのユーザーを外します。<br>よろしいですか？
+"Warning!<br>This action will remove those users from already assigned roles.<br>Are you sure?",警告！<br>このアクションは既に割り当てられたロールからユーザーを外します。<br>よろしいですか？
 "New admin user '%user_name' created","新規の管理者ユーザー '%user_name' を作成しました"
 "Hello,",こんにちは、
 "A new admin account was created for %first_name, %last_name using %email.","%emai を使用して %first_name %last_name の新しい管理者アカウントが作成されました。"
@@ -10465,6 +10534,7 @@ username,ユーザー名
 "New %changes for %user_name","%user_nameの新しい %changes"
 "We have received a request to change the following information associated with your account at %store_name: %changes.","お客様のアカウントに関連付けられている以下の情報 ％store_name を変更するリクエストを受け取りました: %changes 。"
 "User Notification Template",ユーザー通知テンプレート
+"New User Notification Template",新規ユーザー通知テンプレート
 "Password Lifetime (days)","パスワード有効期間 (日)"
 "Password Change",パスワード変更
 "Last login",最終ログイン
@@ -10589,6 +10659,7 @@ Machinable,マシンナブル
 "Stored Payment Methods",保存された支払い方法
 "No payment tokens are available for the specified order payment.",指定された注文の支払いに利用可能な支払いトークンはありません。
 "You have no stored payment methods.",決済方法が保存されていません。
+"Are you sure you want to delete this card: %1?","このカードを削除してもよろしいですか： %1"
 "Specify the ""public_hash"" value.",「public_hash」値を設定してください。
 "Could not find a token using public hash: %1","公開ハッシュを使用したトークンが見つかりませんでした: %1"
 "Delete Current Hierarchy",現在の階層の削除
@@ -10749,6 +10820,7 @@ Sort,ソート
 "The consumer isn't authorized to access %resources.",顧客は%resourcesにアクセスする権限がありません。
 "Operation allowed only in HTTPS",オペレーションはHTTPSでのみ許可されています
 "Cannot perform GET operation with store code 'all'",GETオペレーションがストアコード'all'では実行できませんでした
+"'The current request does not expect the next parameters: ' .","'現在のリクエストは次のパラメータを期待しません: ' ."
 "Specified request cannot be processed.",指定されたリクエストを処理できません。
 "Request does not match any route.",リクエストはどのルートにもマッチしません。
 "Not allowed parameters: %1. Please use only %2 and %3.","許可されてないパラメーター: %1。 %2 と %3のみ使用してください。"
@@ -10794,6 +10866,9 @@ Sort,ソート
 Country/State,都道府県
 "Total Incl. Tax",税含む合計
 "Final Price",最終価格
+"Incl. tax",税込
+"Excl. tax",税別
+"Total incl. tax",合計（税込）
 "Fixed Product Taxes",商品固定税
 "Enable FPT",FPTを有効にする
 "Display Prices In Product Lists",商品一覧にFPT額を表示する
@@ -10878,6 +10953,7 @@ Comment:,コメント:
 "The quantity of a wish list item cannot be 0",ウィッシュリスト項目の数量を0にすることはできません
 "The product is disabled",製品は無効になっています
 "Could not add the product with SKU ""%sku"" to the wishlist:: %message","SKU 「%sku 」を持つ製品をウィッシュリストに追加できませんでした：%message"
+"The wishlist item with ID ""%id"" does not belong to the wishlist","ID ""%id""の欲しい物アイテムは欲しい物リストに属していません"
 "Could not find a wishlist item with ID ""%id""","IDが「%id 」のウィッシュリスト項目が見つかりませんでした"
 "We can't delete the item with ID ""%id"" from the Wish List right now.","現在、ウィッシュリストからIDが「%id 」の項目を削除できません。"
 error-message,エラーメッセージ
@@ -10972,6 +11048,7 @@ Warning,警告
 "Please specify Url.",URLを指定してください。
 "Method %s does not exist on jQuery.decorate","メソッド %s は jQuery.decorate に存在しません"
 "Please wait...",しばらくお待ちください。。
+"All %1","すべての %1"
 Translate,翻訳
 "No marginal white space please",余白を削除してください
 "Please remove invalid characters: {0}.","無効な文字を削除して下さい： {0}"
