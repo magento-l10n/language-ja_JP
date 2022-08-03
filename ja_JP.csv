@@ -9422,6 +9422,7 @@ MSRP,メーカーの希望小売価格
 "We can't save the shipment right now.",今現在配送データを保存できません。
 "The shipment has been created.",配送伝票を作成しました。
 "Cannot save shipment.",配送伝票を保存できません。
+"This shipment no longer exists.",この配送は存在しません。
 "Cannot do shipment for the order separately from invoice.",請求書と別に配送伝票を作成できません。
 "Cannot do shipment for the order.",配送伝票を作成できません。
 "Tracking information must contain title, carrier code, and tracking number",トラッキング情報にはタイトル、キャリアコード、トラッキング番号を含む必要があります
@@ -9479,6 +9480,7 @@ Track:,追跡:
 "See our Shipping Policy",配送ポリシーをご覧ください。
 "Shipping Settings Section",配送設定欄
 "Shipping Policy Parameters Section",配送ポリシーパラメーターセクション
+"Delivery Methods Section",配送方法セクション
 "Shipping Settings",配送設定
 Origin,発送元
 "Shipping Policy Parameters",配送ポリシーパラメーター
