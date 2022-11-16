@@ -6433,6 +6433,11 @@ Expires:,失効:
 "Show All Quotes",すべての見積を表示
 "Show My Quotes",私の見積を表示
 "The shipping address specified on the quote was deleted from your Address Book.",見積もりで指定された配送先住所がアドレス帳から削除されました。
+"To proceed with the checkout, go ","チェックアウトを続行するには、次の手順に従ってください: "
+"back to the quote",見積詳細に戻る
+"The shipping address specified on the quote was deleted from your Address Book. ","見積で指定された配送先住所がアドレス帳から削除されました。 "
+"To proceed with the checkout, update the shipping address.",チェックアウトを続行する`ため、配送先住所を更新してください。
+"Your shipping address is locked. To change your shipping address, go ","配送先住所がロックされています。配送先住所を変更するには、 "
 "Update Catalog Prices",カタログ価格を更新
 "If you proceed, catalog prices and cart discounts on this quote will be updated as per the latest changes in the catalog and the price rules.",続行すると、この見積もりのカタログ価格およびカート割引は、カタログおよび価格ルールの最新の変更に従って更新されます。
 "Please enter a number greater than 0 in this field",0以上の数を入力してください。
@@ -6495,6 +6500,8 @@ Quote,見積もり
 "No such public catalog entity",そのような公開カタログのエンティティはありません
 "Shared Catalog (or Customer Group)",共有カタログ（もしくは顧客グループ）
 "No New Relic Application ID configured, cannot continue with Cron Event reporting","RelicアプリケーションIDが設定されていないため, Cronイベントレポートを続けれません"
+"The New Relic integration requires the newrelic-php5 agent, which is not installed. More
+                        information on installing the agent is available <a target=""_blank"" href=""%1"">here</a>.","New Relicを利用するため「newrelic-php5」 エージェントが必要です。エージェントをインストール詳細情報が <a target=""_blank"" href=""%1"">こちら</a>で参考できます。"
 "New Relic Reporting Section",新しいRelic報告セクション
 "New Relic Reporting","New Relicレポート"
 "Enable New Relic Integration","New Relic連携を有効化"
@@ -6787,6 +6794,7 @@ Help,ヘルプ
 "The PayPal gateway rejected the request. %1","PayPalゲートウェイが要求を拒否しました。 %1"
 "I'm sorry - but we were not able to process your payment. Please try another payment method or contact us so we can assist you.",申し訳ありませんが、お支払いを処理できませんでした。別の支払い方法を試すか、お問い合わせください。
 "I'm sorry - but we are not able to complete your transaction. Please contact us so we can assist you.",申し訳ありませんが、トランザクションを完了できません。お問い合わせください。
+"A successful payment transaction has already been completed. Please, check if the order has been placed.",成功支払トランザクションが完了されました。注文が確定しましたかご確認ください。
 "A match of the Shipping Address City, State, and Postal Code failed.",配送先住所の市、県、郵便番号が一致しませんでした。
 "The payment method code is not set.",支払方法コードが設定されていません。
 "The reference ID is not set.",リファレンスIDがセットされていません。
@@ -8516,6 +8524,7 @@ Unassign,未割り当て
 """%1"" coupon code was not applied. Do not apply discount is selected for item(s)","""%1""クーポンコードが適用されませんでした。選択された商品にディスカウントを適用しないでください。 "
 "The ""%1"" coupon code isn't valid. Verify the code and try again.","""%1"" クーポンコードが無効です。コードを確認して、再度お試し下さい。"
 "The coupon code has been accepted.",クーポンコードを適用しました。
+"The coupon code has been removed.","クーポン コードは取り消されました。"
 "New Order",新しい注文
 "Error while processing order.",オーダーの処理中にエラーが発生しました。
 "Cannot add new comment.",コメントを追加できません。
@@ -8534,6 +8543,7 @@ Unassign,未割り当て
 "We can't void the credit memo.",クレジットメモを無効にできません。
 "The order no longer exists.",この注文データは存在しません。
 "We can't create credit memo for the order.",この注文へのクレジットメモを作成できません。
+"This creditmemo no longer exists.",このクレジットメモは存在しません。
 "Edit Order",注文編集
 "You sent the order email.",注文メールを送信しました
 "We can't send the email order right now.",現在Eメール注文が送れません。
@@ -8761,6 +8771,7 @@ Complete,完了
 "Order Currency:",注文通貨:
 "Same As Billing Address",請求先と同じ
 "Select from existing customer addresses:",登録済の顧客と住所から選択:
+"Add to address book",アドレス帳に追加
 "You don't need to select a shipping address.",送付先住所を選択する必要はありません
 "Gift Message for the Entire Order",この注文のギフトメッセージ
 "Custom Price",カスタム価格
@@ -9012,6 +9023,7 @@ Coupons/Discounts,クーポン/ディスカウント
 "We can't delete the rule right now. Please review the log and try again.",現在ルールの削除はできません。ログを見なおして再度試して下さい。
 "New Cart Price Rule",新しいクーポン
 "Rule is not defined",クーポンが未定義です
+"The rule coupon settings changed. Please save the rule before using auto-generation.",クーポンの設定が変更されました。自動生成を使用する前にルールを保存してください。
 "Message is added to queue, wait to get your coupons soon",メッセージがキューに追加されました。クーポンはもうすぐ受信できます。
 "Invalid data provided",無効なデータが提供されました
 "Something went wrong while generating coupons. Please review the log and try again.",クーポン作製中に問題が発生しました。ログを見なおして再度試して下さい
@@ -9026,6 +9038,7 @@ Coupons/Discounts,クーポン/ディスカウント
 "Specified rule only allows auto generated coupons",指定のルールは自動生成クーポンのみ許可します
 "Specified rule does not allow auto generated coupons",指定のルールは自動生成のクーポンを許可しません
 "Error occurred when saving coupon: %1","クーポン保存中に問題が発生しました: %1"
+"Sorry, something went wrong during rule usage update. Please see log for details.",ルールの使用状況の更新中に問題が発生しました。詳細はログをご覧ください。
 "Coupon with the same code",同じコードのクーポンがあります
 "No Coupon",自動適用クーポン
 "Specific Coupon",特定のクーポン
@@ -9060,6 +9073,7 @@ FOUND,存在する
 "Specified rule does not allow automatic coupon generation",指定のルールは自動のクーポンの生成を許可しません。
 "Error occurred when generating coupons: %1","クーポン生成時に問題が発生しました: %1"
 "Some coupons are invalid.",幾つかのクーポンは無効です。
+"Rule processing: %1","処理中ルール: %1"
 "Item totals are not set for the rule.",商品合計はルールのために設定されていない
 "%1 Cart Price Rules based on ""%2"" attribute have been disabled.","%1 ""%2""属性に基づくカート価格ルールは無効化されました。"
 "%1 coupon(s) have been generated.","%1 クーポンが作成されました"
@@ -9102,6 +9116,7 @@ Promotion,プロモーション
 "Please correct the scheduled operation type.",スケジュールされた操作の種類を修正してください。
 "Server Type",サーバタイプ
 "File Directory",ファイルディレクトリ
+"For Type ""Local Server"" use relative path to Magento installation,  e.g. var/export, var/import, var/export/some/dir. If remote storage is configured, use paths like import_export/export, import_export/import, import_export/export/some/dir.","「ローカルサーバー」タイプの場合は、Magentoインストールの相対パスを使用します。例えば、var/export, var/export/some/dir. リモートストレージが設定されている場合は、import_export/export, import_export/import, import_export/export/some/dirなどのパスを使用します。"
 "FTP Host[:Port]",FTPホスト名[:ポート番号]
 "File Mode",ファイルモード
 "Passive Mode",Passiveモード
@@ -9254,6 +9269,7 @@ Synonyms,同義語
 "Are you sure that you want to log out all other sessions?",他のすべてのセッションをログアウトしてもよろしいですか？
 "Log out all other sessions",他のすべてのセッションをログアウトする
 "This computer is using IP address %1.","このコンピュータはIPアドレス %1 を使用しています。"
+Warning,警告
 "Admin Account Sharing",管理者アカウントの共有
 "If set to Yes, you can log in from multiple computers into same account. Default setting No improves security.",[はい]に設定すると、複数のコンピュータから同じアカウントにログインできます。デフォルト設定はセキュリティを向上させます。
 "Password Reset Protection Type",パスワードリセットの制御方法
@@ -9261,6 +9277,8 @@ Synonyms,同義語
 "Limit the number of password reset request per hour. Use 0 to disable.",1時間あたりに実行できるパスワードリセットの回数です。0の場合は無効です。
 "Min Time Between Password Reset Requests",パスワードリセットリクエストの最短間隔
 "Delay in minutes between password reset requests. Use 0 to disable.",パスワードリセットリクエストを再実行できる間隔を指定します。0の場合は無効です。
+"Max Session Size in Admin",管理画面の最大セッションサイズ
+"Max Session Size in Storefront",ストアフロントでのセッション最大サイズ
 "You can't send messages more than %1 times an hour.","1時間に %1回以上メッセージを送信することはできません。"
 "The link to a friend was sent.",リンクを友達に送信しました。
 "We found some problems with the data.",データに問題をみつけました
@@ -9621,6 +9639,11 @@ entity_type,エンティティタイプ
 Test,テスト
 "This action is unavailable",この操作は利用できません
 Calendar,カレンダー
+"Selected Update\:","選択した更新\:"
+"This update includes",このアップデートには以下が含まれます
+Objects,オブジェクト
+"To Start",開始
+"To End",終了
 "Belongs to ","属する "
 "Share Preview Link",プレビューリンクの共有
 Staging,ステージング
@@ -10103,6 +10126,7 @@ welcome,ようこそ
 "We cannot find a theme with id ""%1"".","id ""%1""のテーマがみつかりません"
 "You deleted the theme.",テーマを削除しました
 "We cannot delete the theme.",テーマを削除できません
+"Theme not found: ""%1"".","テーマが見つかりません: ""%1""."
 "File not found: ""%1"".","ファイルが見つかりません: ""%1""."
 "We can't find file.",ファイルが見つかりません
 "We cannot find theme ""%1"".","テーマが見つかりません ""%1""."
@@ -10146,6 +10170,7 @@ testMessage,テストメッセージ
 "This is a demo store. No orders will be fulfilled.",これはデモストアです。ご注文は処理されません。
 "Items %1 to %2 of %3 total","%1 から %2 のアイテムの %3 合計"
 "%1 Item(s)","%1 アイテム"
+"Skip to page %1","ページ %1 にスキップ"
 "The store will not work correctly in the case when cookies are disabled.",cookieが無効の場合、ストアは正常に動作しません。
 "We don't recognize this file extension.",拡張子を認識できませんでした
 "1 column",1カラム
@@ -10218,13 +10243,21 @@ Translations,翻訳
 "Allowed file types",許可されるファイルタイプ
 "Save View As...",別名で保存...
 "Save all changes",すべての変更を保存
+"Delete bookmark",ブックマークを削除
+"Edit bookmark",ブックマークを編集
 Columns,列
+"All in Column",すべての列
+"Please make corrections to the errors in the table below and re-submit.",以下の表のエラーを修正し、再送信してください。
+"Save Edits",編集を保存
 "Record contains unsaved changes.",レコードに保存されていない変更が含まれています。
+"Active filters\\:","有効なフィルター\\:"
 "Clear all",すべてクリア
 Filters,検索結果を絞る
 "Advanced filter",詳細フィルター
 "Apply Filters",フィルターを適用
 "Sort by",並べ替えの基準
+"Select Items",アイテムを選択
+Past,過去
 Tooltip,ツールチップ
 "The file upload field is disabled.",ファイルアップロードフィールドは無効です。
 "was not uploaded",アップロードされていません
@@ -10296,6 +10329,7 @@ Keyword,キーワード
 "Please enter a valid URL Key (Ex: ""example-page"", ""example-page.html"" or ""anotherlevel/example-page"").","有効なURLキーを入力して下さい (例: ""example-page"", ""example-page.html"" あるいは ""anotherlevel/example-page"")。"
 "Please enter a valid zip code.",正しい郵便番号を入力してください。
 "Please select State/Province.",地域を選択してください
+"Please enter a value less than or equal to %s.","%s 以下の値を入力してください。"
 "Please enter a value greater than or equal to %s.",%s以上の値を入力してください。
 "Please enter valid email addresses, separated by commas. For example, johndoe@domain.com, johnsmith@domain.com.","正しいメールアドレスを「,」で区切って入力してください。（例）johndoe@domain.com, johnsmith@domain.com."
 "Please enter issue number or start date for switch/solo card type.",switch/soloカード・タイプのイシュー番号あるいは開始日を入力してください
@@ -11041,7 +11075,6 @@ Worldpay,ワールドペイ
 "For shipping to multiple family members and friends",複数の家族メンバーと友達のために
 "If you have questions about your order, you can email us at <a href=""mailto:%store_email"">%store_email</a>.","注文について質問がある場合は、 <a href=""mailto:%store_email"">%store_email</a>にEメールをお送りください。"
 "Backup options",バックアップオプション
-Warning,警告
 "The widget %1 is no longer available. Select a different widget.","ウィジェット %1 は使用できなくなりました。別のウィジェットを選択して下さい。"
 "Recent items",最近の商品
 "Show all...",全て表示...
