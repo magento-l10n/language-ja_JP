@@ -10580,9 +10580,16 @@ Worldpay,ワールドペイ
 "Quick Checkout",クイックチェックアウト
 "Store alternative addresses",別住所を保管
 "For shipping to multiple family members and friends",複数の家族メンバーと友達のために
+"<a href=url_customer_service>Customer Service</a>","<a href=url_customer_service>カスタマーサービス</a>"
+"Hours of Operation:<br /><span class=""no-link"">%store_hours</span>.","営業時間:<br /><span class=""no-link"">%store_hours</span>."
 "If you have questions about your order, you can email us at <a href=""mailto:%store_email"">%store_email</a>.","注文について質問がある場合は、 <a href=""mailto:%store_email"">%store_email</a>にEメールをお送りください。"
+"Shipping Info",配送情報
+"Account Dashboard",アカウントダッシュボード
+"About Us",会社概要
+"Customer Service",カスタマーサービス
 "Backup options",バックアップオプション
 Warning,警告
+"Insert Widget...",ウィジェット挿入...
 "Recent items",最近の商品
 "Show all...",全て表示...
 "Please enter a number greater 0 in this field.",0以上の数字を入力してください。
@@ -10590,8 +10597,10 @@ Warning,警告
 "Please specify Url.",URLを指定してください。
 "Method %s does not exist on jQuery.decorate","メソッド %s は jQuery.decorate に存在しません"
 "Please wait...",しばらくお待ちください。。
+"All ","すべて "
 Translate,翻訳
 "Please remove invalid characters: {0}.","無効な文字を削除して下さい： {0}"
+"Please use only letters (a-z), numbers (0-9) or underscore (_) in this field, and the first character should be a letter.","この項目にはアルファベット(a-z), 数字(0-9) あるいはアンダースコア (_)のみが使えます。 最初の文字はアルファベットでなければなりません。"
 "Please select one of the options above.",1つ以上のオプションを選択してください。
 "Please select a file.",ファイルを選択してください。
 "Please select one of the options.",1つ以上のオプションを選択してください。
@@ -10607,6 +10616,7 @@ Translate,翻訳
 "Please enter a valid number.",正しい数字を入力してください。
 "This is required field",必須項目です
 "Admin is a required field in each row.",Adminは各行に必須のフィールドです。
+"Password cannot be the same as email address.",パスワードはメールアドレスと同じにすることはできません。
 "Please fix this field.",フィールドの値を修正してください。
 "Please enter a valid URL.",正しいURLを入力してください。
 "Please enter a valid date (ISO).",ISO規格の正しい日付を入力してください。
@@ -10624,6 +10634,11 @@ Translate,翻訳
 "Please enter a valid year (1900-%1).","有効な年を入力してください (1900-%1)."
 "Please enter a valid day (1-%1).","有効な日を入力してください (1-%1)."
 "Please enter a date from the past.",過去の日付を入力してください。
+"Maximum length of this field must be equal or less than %1 symbols.","この項目の文字数は %1文字以下です。"
+"Admin is a required field in the each row.",Adminは各行に必須のフィールドです。
 "Forbidden extensions has been used. Avoid usage of ","ご利用いただけない拡張子が使用されました。次の拡張子はご使用いただけません "
 "No marginal white space please",余白を削除してください
+"Please enter 6 or more characters. Leading or trailing spaces will be ignored.",6文字以上を入力してください。先頭と最後の空白は無視されます。
+"Enter valid SKU key","正しい SKU キーを入力してください"
+"Swatch and Admin are the required fields in the each row.","Swatch と Admin は、各行の必須フィールドです。"
 "The widget %1 is no longer available. Select a different widget.","ウィジェット %1 は使用できなくなりました。別のウィジェットを選択して下さい。"
