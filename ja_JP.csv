@@ -2793,12 +2793,12 @@ Blocked,ブロック済み
 "Company admin",会社管理者
 "Company user",会社のユーザー
 "Individual user",個別のユーザー
+"Invalid value of ""%value"" provided for the %fieldName field.","%fieldNameフィールドに指定された ""%value"" の値が無効です。"
 "Unable to set ""allow"" for the resource because its parent resource(s) is set to ""deny"".",親リソースが「拒否」に設定されているため、リソースに「許可」を設定できません。
 "Invalid login or password.",ログイン名かパスワードが違います。
 "This account is locked.",このアカウントはロックされています。
 "Your account is not yet approved. If you have questions, please contact the seller.",あなたのアカウントはまだ承認されていません。ご不明な点がございましたら、販売者にお問い合わせ下さい。
 "There was an error saving custom attributes.",顧客属性の保存でエラーがありました。
-"Invalid value of ""%value"" provided for the %fieldName field.","%fieldNameフィールドに指定された ""%value"" の値が無効です。"
 "No such entity with %fieldName = %fieldValue","%fieldName = %fieldValueのエンティティはありません"
 "This role cannot be deleted because users are assigned to it. Reassign the users to another role to continue.","この権限はユーザーが割り当てられているため削除できません。 続行するには、ユーザーを別の役割に再割り当てして下さい。"
 "You cannot delete a role when it is the only role in the company. You must create another role before deleting this role.","権限が会社の唯一の権限である場合、削除することはできません。 この権限を削除する前に、別の権限を作成する必要があります。"
@@ -2812,13 +2812,12 @@ Blocked,ブロック済み
 "Could not save company: %1","会社を保存できませんでした: %1"
 "Cannot delete structure with id %1","id %1 のストラクチャを削除できません"
 "Could not create team",チームを作成できまでんした
-"This team has child users or teams aligned to it and cannot be deleted. Please re-align the child users or teams first.","このチームには子ユーザーまたはチームが配置されており、削除できません。 最初に子ユーザーやチームを再調整してください。"
 "Could not update team",チームを更新できませんでした
 "Cannot delete team with id %1","id %1 のチームを削除できません"
 "You cannot assign a different role to a company admin.",会社管理者には別の権限を割り当てることはできません。
 "You cannot assign multiple roles to a user.",ユーザーに複数の権限を割り当てることはできません。
-"Cannot delete the company admin. Delete operation has been stopped. Please repeat the action for the other customers.",会社管理者は削除できません。削除操作は停止されました。他の顧客の操作を繰り返してください。
 "Something went wrong",問題が発生しました
+"Cannot delete the company admin. Delete operation has been stopped. Please repeat the action for the other customers.",会社管理者は削除できません。削除操作は停止されました。他の顧客の操作を繰り返してください。
 "This customer company account is blocked and customer cannot place orders.",この顧客会社アカウントがブロックされ、顧客が注文を行えません。
 "The consumer isn't authorized to access resource.",顧客はリソースにアクセスする権限がありません。
 " - Duplicated"," - 複製"
@@ -2836,6 +2835,7 @@ Duplicate,複製
 "Company Name",会社名
 "Customer Type:",顧客タイプ:
 Company:,会社:
+"User Role",ユーザー権限
 "Company Information",会社情報
 "Company Legal Name",会社の登録名
 "Company Email",会社Eメール
@@ -2853,7 +2853,6 @@ Company:,会社:
 "Add User",ユーザーを追加
 "Add Team",チームを追加
 "Edit Selected",選択したものを編集
-"User Role",ユーザー権限
 "Team Title",チームタイトル
 "You don't have a company account yet.",まだ会社アカウントを持っていません。
 "VAT/TAX ID: ","VAT/税ID: "
@@ -2863,11 +2862,18 @@ Contacts,連絡先
 "Role Information",権限情報
 "Role Permissions",ロール権限
 "Save Role",権限の保存
+"This action cannot be undone. Are you sure you want to delete this user?",このアクションは取り消せません。このユーザーを削除してもよろしいですか？
 "Add New User",新しいユーザーを追加
 "Create an Account",アカウント作成
+"Change Customer Group?",顧客グループを変更しますか？
+"This customer is a user of a different company. If you proceed, the customer will be unlinked from the current company and linked to the selected company.",この顧客は別の会社のユーザーです。続行した場合、顧客は現在の会社からリンクが解除され、選択した会社にリンクされます。
+"Change Company?",会社を変更しますか？
+"Your account is now active. You can use it to login to the <a href=""%customer_url"">website</a>.","あなたのアカウントは現在アクティブになっています。<a href=""%customer_url"">ウェブサイト</a>にログインするために使用することができます。"
+"Your account is no longer active. You will not be able to use it for login.","あなたのアカウントはもうアクティブではありません。 このアカウントはログインするために使用できません。"
 "This action will replace your Company Admin.",この操作はあなたの会社管理者を置き換えます。
 "* Your latest changes on the company profile have not been saved yet.",*会社概要の最新の変更はまだ保存されていません。
 "Dear %name,","こんにちは %name 様"
+"Your account has been set to inactive and you cannot now access the company account. If you think this is a mistake, please contact your manager for details.","あなたのアカウントは非アクティブに設定されており、現在会社アカウントにアクセスすることができません。 間違いだと思われる場合は、マネージャーに詳細をお問い合わせください。"
 "You have been assigned to <a href=""%customer_url"">%company_name</a> as the Company Admin.","あなたは会社管理者として<a href=""%customer_url"">%company_name</a>に割り当てられています。"
 "When you sign in to your account, you can:",アカウントにサインインすると以下のことができます:
 "* Create and manage company users and teams","* 会社のユーザーとチームの作成と管理"
@@ -2881,10 +2887,7 @@ Contacts,連絡先
 "If this is a mistake,
     please contact the company Admin at %company_admin_email.","これが間違いである場合は、
     %company_admin_email で会社管理者にお問い合わせ下さい。"
-"Your account is now active. You can use it to login to the <a href=""%customer_url"">website</a>.","あなたのアカウントは現在アクティブになっています。<a href=""%customer_url"">ウェブサイト</a>にログインするために使用することができます。"
-"Your account is no longer active. You will not be able to use it for login.","あなたのアカウントはもうアクティブではありません。 このアカウントはログインするために使用できません。"
 "If this is a mistake, please contact the seller.",これが間違いであれば、販売業者にお問い合わせ下さい。
-"Your account has been set to inactive and you cannot now access the company account. If you think this is a mistake, please contact your manager for details.","あなたのアカウントは非アクティブに設定されており、現在会社アカウントにアクセスすることができません。 間違いだと思われる場合は、マネージャーに詳細をお問い合わせください。"
 "A company registration request has been submitted by customer %customer. The account is temporarily locked until you approve or reject this company.","顧客 %customer によって会社登録リクエストが送信されました。 この会社を承認または拒否するまで、アカウントは一時的にロックされます。"
 "Company: %company","会社: %company"
 "Your company registration request (for the <strong>%company_name</strong>)
@@ -2928,8 +2931,6 @@ Proceed,続行
 "This user cannot be deleted because he/she is a company admin.",このユーザーは会社管理者であるため削除できません。
 "Edit User",ユーザーの編集
 "Cannot Delete User",顧客を削除できません
-"Delete this user?",このユーザーを削除しますか？
-"This action cannot be undone. Are you sure you want to delete this user?",このアクションは取り消せません。このユーザーを削除してもよろしいですか？
 "Edit Team",チームの編集
 "Cannot Delete This Team",このチームを削除できません
 "Delete this team?",このチームを削除しますか？
@@ -2938,7 +2939,6 @@ Proceed,続行
 "This action cannot be undone. Are you sure you want to delete this role?",このアクションは取り消せません。この権限を削除してもよろしいですか？
 "Cannot Delete Role",権限を削除できません
 "Cannot Delete Customer",顧客を削除できません
-"Set Inactive",非アクティブに設定
 "User with this email already exists in the system. Enter a different email address to continue. If you want to use your current account as an administrator account, please contact the seller.","このメールアドレスのユーザーは既にシステムに存在しています。 続行するには別のメールアドレスを入力してください。 現在のアカウントを管理者アカウントとして使用する場合は、販売者にお問い合わせ下さい。"
 "Enable Company",会社を有効にする
 "Company Configuration",会社の構成
@@ -2994,6 +2994,7 @@ Comment,コメント
 ZIP,郵便番号
 "Company Admin",会社管理者
 Gender,性別
+"Set Inactive",非アクティブに設定
 "Customer Type",顧客タイプ
 "Are you sure you want to temporarily disable this company account? If you confirm, login for all company members will be blocked.",この会社アカウントを一時的に無効にしてもよろしいですか？承認すると、全社員のログインがブロックされます。
 "Are you sure you want to set this company to active? If you confirm, the company members will be able to operate within their company account.>",この会社をアクティブに設定してもよろしいですか？承認すると、社員は会社アカウント内で処理できるようになります。
@@ -3006,12 +3007,9 @@ Gender,性別
 Prefix,接頭辞
 "Middle Name/Initial",ミドルネーム/イニシャル
 Suffix,サフィックス
-"Change Customer Group?",顧客グループを変更しますか？
 "This action will change the customer group for all members of this company. Would you like to proceed?",このアクションにより、会社の全社員の顧客グループが変更されます。続行しますか？
 "The user <%- username %> is the company admin and cannot be set to inactive. You must set another user as the company admin first.","ユーザー <%- username %> は会社の管理者であり、未アクティブに設定することができません。最初に会社の管理者として別のユーザーを設定して下さい。"
 "Customer Active",顧客アクティブ
-"This customer is a user of a different company. If you proceed, the customer will be unlinked from the current company and linked to the selected company.",この顧客は別の会社のユーザーです。続行した場合、顧客は現在の会社からリンクが解除され、選択した会社にリンクされます。
-"Change Company?",会社を変更しますか？
 "Associate to Company",会社に関連づける
 "My Orders",ご注文
 "Create New Customer",新規顧客作成
